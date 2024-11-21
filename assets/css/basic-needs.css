@@ -1,0 +1,52 @@
+/* Resetting Browser Rendered Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    list-style: none;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+/* Global Reusable Variables*/
+:root {
+    --primary: #14552C;
+    --secondary: #CB9946;
+}
+
+/* Gloabl Reusable Classes */
+.container {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.btn {
+    padding: 12px 32px;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: center;
+    color: #14552C;
+    border: 1px solid #14552C;
+    border-radius: 10px;
+
+    &:hover {
+        color: white;
+        background: #14552C;
+    }
+}
+
+/* Updating Bootstrap Classes According to our needs */
+.btn-light {}
