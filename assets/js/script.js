@@ -25,3 +25,10 @@ industryTabsBtns.forEach((tabBtn, index) => {
     });
   });
 });
+
+// %%%%%%%%%%%%
+const swiper = new Swiper(".partner-swiper[data-partner-swiper]", {
+  // Optional parameters
+  slidesPerView: 6,
+  loop: true,
+});

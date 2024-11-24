@@ -41,6 +41,13 @@ h1 {
     letter-spacing: -0.02em;
 }
 
+h1.title-light {
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
 h2 {
     font-size: 24px;
     font-weight: 800;
@@ -85,7 +92,7 @@ h6 {
     font-weight: 400;
     line-height: 18px;
 }
-    
+
 .text-small {
     font-size: 14px;
     font-weight: 400;
@@ -149,4 +156,34 @@ h6 {
     height: 2px;
     width: 86%;
     margin: 100px auto;
+}
+
+.partner-slider-section {
+    .titles {
+        margin: 0 auto;
+        text-align: center;
+        max-width: max-content;
+
+        p {
+            margin-top: 10px;
+        }
+    }
+
+    .partner-swiper {
+        width: 100%;
+        margin: 70px auto 0;
+
+        .swiper-wrapper {
+            align-items: center;
+        }
+
+        .partner-logo {
+            width: 160px;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
