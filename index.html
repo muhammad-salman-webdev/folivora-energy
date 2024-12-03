@@ -30,6 +30,10 @@
     <!-- Custom CSS Files -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/mini-laptop.css" />
+    <link rel="stylesheet" href="assets/css/tablate.css" />
+    <link rel="stylesheet" href="assets/css/small-device.css" />
+    <link rel="stylesheet" href="assets/css/mobile.css" />
   </head>
   <body>
     <!-- ----------------------- -->
@@ -42,7 +46,7 @@
           <!-- Logo -->
           <div class="logo">
             <img
-              src="assets/media/images/logo/folivora-energy-logo.svg"
+              src="assets/media/images/svg-icons/folivora-energy-logo.svg"
               alt="#" />
           </div>
           <!-- NavBar -->
@@ -51,7 +55,7 @@
               <label class="toggle-btn-x" for="menu-bar">
                 <i class="fa-solid fa-x"></i>
               </label>
-              <ul>
+              <ul id="header-nav-main">
                 <!-- NavBar Item -->
                 <li>
                   <!-- Sub Triger -->
@@ -213,7 +217,7 @@
       </div>
     </section>
 
-    <!-- --------------------- -->
+    <!-- ------------------------>
     <!-- END :: Header Section -->
     <!-- --------------------- -->
 
@@ -222,9 +226,9 @@
     <!-- ################################# -->
     <!-- ################################# -->
 
-    <!-- --------------------- -->
-    <!-- START :: Hero Section -->
-    <!-- --------------------- -->
+    <!------------------------------>
+    <!-- START :: Hero Section 2 --->
+    <!------------------------------>
 
     <section class="hero-section">
       <div class="container">
@@ -236,12 +240,6 @@
             </p>
 
             <h1>Powering <span>Smart</span> Energy Systems and Processes</h1>
-
-            <span>
-              <b>Folivora Energy</b> leverages intelligent software to transform
-              how energy systems are managed, ensuring peak efficiency and
-              sustainability.
-            </span>
 
             <!-- Sloth Brain Section  -->
             <div class="sloth-brain-section">
@@ -269,9 +267,9 @@
     <!-- ################################# -->
     <!-- ################################# -->
 
-    <!-- ------------------------------- -->
-    <!-- START :: Folivora Intro Section -->
-    <!-- ---------------------------------->
+    <!-- ----------------------------------->
+    <!-- START :: Folivora Intro Section 3-->
+    <!-- ----------------------------------->
 
     <section class="folivora-info-section">
       <div class="container">
@@ -347,7 +345,7 @@
     <!-- ################################# -->
 
     <!-- ---------------------------------->
-    <!-- START :: Folivora About Section -->
+    <!-- START :: Folivora About Section 4-->
     <!-- ---------------------------------->
 
     <section class="about-section">
@@ -410,20 +408,17 @@
     <!-- ################################# -->
     <!-- ################################# -->
 
-    <!-- ------------------------------------->
-    <!-- START :: Folivora Industry Section -->
-    <!-- ------------------------------------->
+    <!-- --------------------------------------->
+    <!-- START :: Folivora Industry Section 5 -->
+    <!-- --------------------------------------->
 
     <section class="industry-section" data-change-industry-tabs>
       <div class="container">
         <div class="industry-container">
           <!-- Industry Content  -->
           <div class="industry-content">
-            <!-- industry Heading  -->
-            <div class="industry-head">
-              <h1>For whom we do it</h1>
-              <button class="btn btn-light">Clients and Case Studies</button>
-            </div>
+            <h1>For whom we do it</h1>
+            <button class="btn btn-light">Clients and Case Studies</button>
 
             <p>
               <strong>
@@ -664,39 +659,115 @@
     <!-- ################################# -->
     <!-- ################################# -->
 
-    <!-- ------------------------------------>
-    <!-- START :: Folivora Product Section -->
-    <!-- ------------------------------------>
+    <!-- ----------------------------------- -->
+    <!-- START :: Folivora Product Section 6 -->
+    <!-- ----------------------------------- -->
 
-    <section class="product-section" style="display: none">
+    <section class="product-section">
       <div class="container">
         <div class="product-container">
           <!-- Industry Product Heading  -->
           <div class="indus-product-head">
             <!-- Product Head  -->
-            <div class="product-head">
-              <h1>Our Product</h1>
-              <p>
-                Our products feature specialized Logic Blocks with customized OS
-                for unique sectors.
-              </p>
-            </div>
-            <a href="#" class="btn">Explore Our Products</a>
+
+            <h1>Our Product</h1>
+            <p>
+              Our products feature specialized Logic Blocks with customized OS
+              for unique sectors.
+            </p>
+
+            <a href="#" class="btn btn-light">Explore Our Products</a>
           </div>
 
           <!-- Product Cards  -->
           <div class="product-cards">
+            <!-- Product Card 1  -->
             <div class="product-card">
-              <div class="card-head"> </div>
+              <!-- Icon Box  -->
+              <div class="icon-box">
+                <div class="icon-image">
+                  <img
+                    src="assets/media/images/svg-icons/product-box-icon.svg"
+                    alt="#" />
+                </div>
+                <p class="font-medium">
+                  <strong> SlothBrAIn Libary </strong>
+                </p>
+              </div>
+              <!-- Product Content  -->
+              <div class="product-content">
+                <p
+                  >Our SlothBrAIn software library consists of various modules,
+                  such as: algorithms for forecasting and mathematical
+                  optimization as well as different communication protocols and
+                  data management systems.</p
+                >
+              </div>
+            </div>
+
+            <!-- Down Arrow Icon -->
+            <i class="fa-solid fa-arrow-down"></i>
+
+            <!-- Product Card 2  -->
+
+            <div class="product-card">
+              <!-- Icon Box  -->
+              <div class="icon-box">
+                <div class="icon-image">
+                  <img
+                    src="assets/media/images/svg-icons/product-box-icon.svg"
+                    alt="#" />
+                </div>
+                <p class="font-medium">
+                  <strong> Efficiency Operating Systems</strong></p
+                >
+              </div>
+
+              <!-- Product Content  -->
+              <div class="product-content">
+                <p
+                  >From the various modules of the SlothBrAIn library,
+                  customized operating systems can be assembled, which are
+                  perfectly tailored to the customer's needs.</p
+                >
+              </div>
+            </div>
+
+            <!-- Down Arrow Icon -->
+            <i class="fa-solid fa-arrow-down"></i>
+
+            <!-- Product Card 3 -->
+
+            <div class="product-card">
+              <!-- Icon Box  -->
+              <div class="icon-box">
+                <div class="icon-image">
+                  <img
+                    src="assets/media/images/svg-icons/file-icon.svg"
+                    alt="#" />
+                </div>
+                <p class="font-medium"
+                  ><strong>Edge-Devices & Cloud Infrastructure</strong></p
+                >
+              </div>
+
+              <!-- Product Content  -->
+              <div class="product-content">
+                <p
+                  >Based on the customer's preferences, the operating systems
+                  can run locally on an industrial computer provided by us or in
+                  the cloud.</p
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ------------------------------------>
-    <!-- START :: Folivora Product Section -->
-    <!-- ------------------------------------>
+    <!--------------------------------------->
+    <!-- END   :: Folivora Product Section -->
+    <!--------------------------------------->
 
     <!-- ################################# -->
     <!-- ################################# -->
@@ -712,9 +783,146 @@
     <!-- ################################# -->
     <!-- ################################# -->
 
-    <!-- ----------------------- -->
-    <!-- START :: Partner Slider -->
-    <!-- ----------------------- -->
+    <!-- ################################### -->
+    <!-- START :: Folivora Service Section 7 -->
+    <!-- ################################### -->
+
+    <section class="services-section">
+      <div class="container">
+        <div class="services-container">
+          <!--  Product Services Heading  -->
+          <div class="product-services-head">
+            <!-- Product Services Head  -->
+            <div class="services-title">
+              <h1>Our Services</h1>
+              <a href="#" class="btn btn-light">Explore Our Services</a>
+            </div>
+
+            <p
+              >We combine strategy consulting with engineering services to
+              create maximum added value for our clients - supported by our own
+              high-performance simulation programs.</p
+            >
+          </div>
+          <!-- Icon Box Container -->
+          <div class="icon-box-container">
+            <!-- Services Box  -->
+            <div class="services-box">
+              <div class="icon-title">
+                <div class="icon-image">
+                  <img
+                    src="assets/media/images/svg-icons/consulting-icon.svg "
+                    alt="#" />
+                </div>
+
+                <p class="text-medium"
+                  ><strong>Strategy consulting Services</strong></p
+                >
+              </div>
+
+              <p
+                >What is the best way to maneuver between economic, regulatory
+                and administrative constraints?</p
+              >
+
+              <nav class="services-list">
+                <ul>
+                  <li>
+                    <a href="#">Official application management</a>
+                  </li>
+
+                  <li>
+                    <a href="#"
+                      >Quantitative planning of transformation projects</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="#">CAPEX planning</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Service provider coordination and tenders</a>
+                  </li>
+                  <li>
+                    <a href="#">Budget and implementation planning</a>
+                  </li>
+                  <li>
+                    <a href="#">Transformation concepts and plans</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <!-- Services Box  -->
+            <div class="services-box">
+              <div class="icon-title">
+                <div class="icon-image">
+                  <img
+                    src="assets/media/images/svg-icons/file-icon.svg "
+                    alt="#" />
+                </div>
+
+                <p class="text-medium"><strong>Engineering Services</strong></p>
+              </div>
+
+              <p
+                >Which technical and physical boundary conditions apply to the
+                system and how can these be improved?</p
+              >
+
+              <nav class="services-list">
+                <ul>
+                  <li>
+                    <a href="#">Metering and measurement concepts</a>
+                  </li>
+                  <li>
+                    <a href="#">Data flow concepts and databases</a>
+                  </li>
+                  <li>
+                    <a href="#">System integration</a>
+                  </li>
+                  <li>
+                    <a href="#">Dynamic energy system control concepts</a>
+                  </li>
+                  <li>
+                    <a href="#">Charging management</a>
+                  </li>
+                  <li>
+                    <a href="#">Building automation audits</a>
+                  </li>
+                  <li>
+                    <a href="#">Process automation audits</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ############################### -->
+    <!-- END :: Folivora Service Section -->
+    <!-- ############################### -->
+
+    <!-- ################################# -->
+    <!-- ################################# -->
+    <!-- ################################# -->
+
+    <!-- START :: DIVIDER -->
+    <div class="container">
+      <div class="divider-line"></div>
+    </div>
+    <!-- END :: DIVIDER -->
+
+    <!-- ################################# -->
+    <!-- ################################# -->
+    <!-- ################################# -->
+
+    <!-- --------------------------->
+    <!-- START :: Partner Slider 8-->
+    <!-- --------------------------->
 
     <section class="partner-slider-section">
       <div class="partner-slider-container">
@@ -820,11 +1028,11 @@
     <!-- ################################# -->
     <!-- ################################# -->
 
-    <!-- ----------------------------------- -->
-    <!-- START :: See Our Work Small Section -->
-    <!-- ----------------------------------- -->
+    <!-- --------------------------------------->
+    <!-- START :: See Our Work Small Section 9-->
+    <!-- --------------------------------------->
 
-    <secction class="goto-work-section">
+    <section class="goto-work-section">
       <div class="container">
         <div class="goto-work-container">
           <!-- Title -->
@@ -832,11 +1040,18 @@
             Need More Information About Our Process?
           </h1>
           <p class="text-small">
-            
+            Download our comprehensive PDF to discover each phase of our process
+            or visit our products page to explore our software solutions.
           </p>
+
+          <!-- Go To Button  -->
+          <div class="goto-btns">
+            <a href="#" class="btn btn-white">Explore Our Products</a>
+            <a href="#" class="overview-link">Download Process Overview</a>
+          </div>
         </div>
       </div>
-    </secction>
+    </section>
 
     <!-- --------------------------------- -->
     <!-- END :: See Our Work Small Section -->
@@ -855,6 +1070,95 @@
     <!-- ################################# -->
     <!-- ################################# -->
     <!-- ################################# -->
+
+    <!-- ----------------------------------- -->
+    <!--  START :: folivora Form Section 10 -->
+    <!-- ----------------------------------- -->
+
+    <section class="form-section">
+      <div class="container">
+        <div class="form-container">
+          <h1>Get in touch below</h1>
+
+          <p>Drop your details here, and we will get back to you.</p>
+
+          <!-- Form Image  -->
+          <div class="contactus-form">
+            <div class="form-image">
+              <img src="assets/media/images/contactus-form.png" alt="#" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------- -->
+    <!--  END   :: folivora Form Section     -->
+    <!-- ----------------------------------- -->
+
+    <!-- ################################# -->
+    <!-- ################################# -->
+    <!-- ################################# -->
+
+    <!-- ----------------------------------- -->
+    <!--  START :: folivora Footer Section11 -->
+    <!-- ----------------------------------- -->
+
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-container">
+          <!-- Footer Icon  -->
+          <div class="footer-logo">
+            <img src="assets/media/images/svg-icons/footer-icon.svg" alt="#" />
+          </div>
+
+          <!-- Folivora Links  -->
+
+          <nav class="folivora-links">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Services</a>
+              </li>
+              <li>
+                <a href="#">Products</a>
+              </li>
+              <li>
+                <a href="#">Clients</a>
+              </li>
+
+              <li>
+                <a href="#">Clients</a>
+              </li>
+              <li>
+                <a href="#">Corporate</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+              <li>
+                <a href="#">Privacy</a>
+              </li>
+              <li>
+                <a href="#">Imprint</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- <div class="folivora-links">
+          </div> -->
+
+          <p>Folivora Energy GmbH Bahnhofstraße 3664367 Mühltal Deutschland </p>
+
+          <a>contact@folivoraenergy.com</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ----------------------------------- -->
+    <!-- END  :: folivora Footer Section     -->
+    <!-- ----------------------------------- -->
 
     <div style="height: 100vh"></div>
   </body>

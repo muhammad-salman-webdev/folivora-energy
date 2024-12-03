@@ -32,3 +32,24 @@ const swiper = new Swiper(".partner-swiper[data-partner-swiper]", {
   slidesPerView: 6,
   loop: true,
 });
+
+//
+
+// &&&&&&&&&&&&&&&&&&&&&&&&&&&&
+const navMenus = document.querySelectorAll(
+  "#header-nav-main > li:has(.submenu)"
+);
+navMenus.forEach((navMenu, index) => {
+  const triger = navMenu.querySelector(".submenu-triger");
+
+  triger.addEventListener("click", () => {
+    // Closing all the other opened menus
+    navMenus.forEach((_navMenu, _index) => {
+      if (index === _index) {
+        _navMenu.classList.toggle("active");
+      } else {
+        _navMenu.classList.remove("active");
+      }
+    });
+  });
+});

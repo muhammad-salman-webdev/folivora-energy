@@ -99,6 +99,13 @@ h6 {
     line-height: 21px;
 }
 
+.text-medium {
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 30px;
+}
+
 .c-primary {
     color: var(--primary);
 }
@@ -111,6 +118,8 @@ h6 {
 }
 
 .btn {
+    display: flex;
+    align-items: center;
     padding: 12px 32px;
     font-family: 'Poppins';
     font-size: 18px;
@@ -123,6 +132,7 @@ h6 {
     color: white;
     border: 1px solid #14552C;
     cursor: pointer;
+    max-width: max-content;
 
     &:hover {
         background: #1a723a;
@@ -149,6 +159,12 @@ h6 {
             border-color: #b48334;
         }
     }
+
+    &.btn-white {
+        background: white;
+        color: black;
+        border: none;
+    }
 }
 
 .divider-line {
@@ -159,6 +175,9 @@ h6 {
 }
 
 .partner-slider-section {
+    width: 100vw;
+    overflow: hidden;
+
     .titles {
         margin: 0 auto;
         text-align: center;
@@ -187,3 +206,16 @@ h6 {
         }
     }
 }
+
+.icon-image {
+    width: 56px;
+    display: flex;
+
+    img {
+        width: 100%;
+    }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>Responsive At 1280px <<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
