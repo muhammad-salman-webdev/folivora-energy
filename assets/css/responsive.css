@@ -14,82 +14,81 @@
     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     /* --------Header Section------ */
     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    .header-section {
-        height: 80px;
-
-        .logo {
-            width: 140px;
-        }
-
-        .navbar-container {
-            position: fixed;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100vh;
-            z-index: 90;
-
-            nav {
-                .toggle-btn-x {
-                    display: block;
-                }
-
-                ul {
-                    flex-direction: column;
-                }
-            }
-        }
-    }
-
-    .header-container {
-        .contact-btn {
-            margin-left: auto;
-        }
-
-        .toggle-btn,
-        .toggle-btn-x {
-            margin-left: 8px;
-            padding: 6px 12px;
-            border-radius: 8px;
-            display: block;
-        }
-
-        .toggle-btn-x {
-            position: absolute;
-            top: 34px;
-            right: 34px;
-        }
-    }
-
-    body:has(input:checked) {
-        .navbar-container {
-            left: 0;
-            background: rgba(0, 0, 0, 0.285);
-            backdrop-filter: blur(2px);
-        }
+    body {
+        max-height: 100vh;
+        overflow: hidden;
     }
 
     /* Header Nav */
     .header-section {
+        height: 80px;
+
+        .resp-menu-toggle-btn {
+            display: block;
+        }
+
         .container {}
 
-        .header-container {}
+        .header-container {
+            .contact-btn {
+                margin-left: auto;
+            }
+        }
 
         .logo {
+            width: 140px;
+
             img {}
         }
 
         .navbar-container {
+            position: fixed;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            height: calc(100vh - 80px);
+            z-index: 99;
+            overflow: auto;
+            background: rgba(0, 0, 0, 0.285);
+            backdrop-filter: blur(2px);
+
             nav {
+                flex-direction: column;
+
                 .toggle-btn-x {}
 
                 &>ul {
                     width: 300px;
-                    background: red;
+                    background: #fff;
+                    padding: 10px 20px;
+                    flex-direction: column;
+                    height: unset;
+                    gap: 0;
 
                     &>li {
                         flex-direction: column;
                         width: 100%;
+                        border-bottom: 1px solid black;
+
+                        &:not(:last-child) {}
+
+                        &.active {
+                            &>.submenu-triger {
+                                &>a {
+                                    color: #14552C;
+
+                                    span {}
+
+                                    i {
+                                        transform: rotate(180deg);
+                                    }
+                                }
+                            }
+
+                            &>.submenu {
+                                grid-template-rows: 1fr;
+                            }
+                        }
 
                         &.lang-selector {
                             .submenu-triger {
@@ -101,14 +100,19 @@
 
                         &>.submenu-triger {
                             width: 100%;
+                            padding: 0;
 
                             &>a {
+                                padding: 14px 0;
                                 width: 100%;
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
 
-                                span {}
+                                span {
+                                    font-size: 18px;
+                                    line-height: 28px;
+                                }
 
                                 i {}
                             }
@@ -130,10 +134,24 @@
                             opacity: 1;
                             min-width: unset;
                             width: 100%;
+                            box-shadow: none;
+                            padding: 0;
+                            display: grid;
+                            grid-template-rows: 0fr;
+                            overflow: hidden;
 
                             &>ul {
+                                min-height: 0px;
+                                padding-bottom: 14px;
+
                                 li {
+                                    &:not(:last-child) {
+                                        border-bottom: 1px solid #cecece;
+                                    }
+
                                     a {
+                                        padding: 8px 10px;
+
                                         &:hover {}
                                     }
                                 }

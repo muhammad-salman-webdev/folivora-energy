@@ -167,6 +167,26 @@ h6 {
     }
 }
 
+.content-video-section {
+    .text-row {
+        width: 100%;
+    }
+
+    .text-video-row {
+        display: flex;
+        gap: 20px;
+        margin-top: 16px;
+
+        .text-col {
+            width: 50%;
+        }
+
+        .video-col {
+            width: 50%;
+        }
+    }
+}
+
 .divider-line {
     background: radial-gradient(52.02% 63150% at 52.02% 0%, #14552C 0%, rgba(255, 255, 255, 0) 100%);
     height: 2px;

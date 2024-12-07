@@ -53,3 +53,9 @@ navMenus.forEach((navMenu, index) => {
     });
   });
 });
+
+//
+const navElem = document.querySelector(
+  ".navbar-container[data-navbar-container]"
+);
+console.log(navElem);
