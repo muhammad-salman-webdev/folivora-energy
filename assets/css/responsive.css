@@ -64,6 +64,7 @@
                     flex-direction: column;
                     height: unset;
                     gap: 0;
+                    min-height: 100%;
 
                     &>li {
                         flex-direction: column;
@@ -98,6 +99,17 @@
                             img {}
                         }
 
+                        &:not(.lang-selector) {
+                            &>.submenu-triger {
+                                width: 100%;
+                                padding: 0;
+
+                                &>a {
+                                    justify-content: space-between;
+                                }
+                            }
+                        }
+
                         &>.submenu-triger {
                             width: 100%;
                             padding: 0;
@@ -107,21 +119,26 @@
                                 width: 100%;
                                 display: flex;
                                 align-items: center;
-                                justify-content: space-between;
 
                                 span {
                                     font-size: 18px;
                                     line-height: 28px;
                                 }
 
-                                i {}
+                                i {
+                                    margin-left: auto;
+                                }
                             }
                         }
 
                         &:hover {
                             &>.submenu-triger {
                                 &>a {
-                                    i {}
+                                    color: #1E1E1E;
+
+                                    i {
+                                        transform: unset;
+                                    }
                                 }
                             }
 
@@ -142,15 +159,19 @@
 
                             &>ul {
                                 min-height: 0px;
-                                padding-bottom: 14px;
 
                                 li {
                                     &:not(:last-child) {
                                         border-bottom: 1px solid #cecece;
                                     }
 
+                                    &:last-child {
+                                        margin-bottom: 14px;
+                                    }
+
                                     a {
-                                        padding: 8px 10px;
+                                        padding: 12px 10px;
+                                        font-size: 16px;
 
                                         &:hover {}
                                     }
