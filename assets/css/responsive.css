@@ -56,11 +56,6 @@
 
             &.anim {
                 opacity: 1;
-
-                nav {
-                    transform: translateY(0vh) scale(1);
-                    opacity: 1;
-                }
             }
 
             nav {
@@ -69,6 +64,11 @@
                 transform: translateY(-200vh) scale(.7);
                 transition: all .6s ease;
                 opacity: 0;
+
+                &.anim {
+                    transform: translateY(0vh) scale(1);
+                    opacity: 1;
+                }
 
                 &>ul {
                     width: 300px;
