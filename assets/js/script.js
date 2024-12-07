@@ -58,4 +58,24 @@ navMenus.forEach((navMenu, index) => {
 const navElem = document.querySelector(
   ".navbar-container[data-navbar-container]"
 );
-console.log(navElem);
+
+const respMenuBtn = document.querySelector(
+  ".resp-menu-toggle-btn input[type='checkbox']"
+);
+
+respMenuBtn.addEventListener("change", () => {
+  console.log("HIHI");
+  if (navElem.classList.contains("show")) {
+    navElem.classList.remove("anim");
+
+    setTimeout(() => {
+      navElem.classList.remove("show");
+    }, 300);
+  } else {
+    navElem.classList.add("show");
+
+    setTimeout(() => {
+      navElem.classList.add("anim");
+    }, 10);
+  }
+});
