@@ -14,11 +14,6 @@ html {
     overflow-x: hidden;
 }
 
-body.paused {
-    max-height: 100vh;
-    overflow: hidden;
-}
-
 img {
     width: 100%;
 }
@@ -166,9 +161,14 @@ h6 {
     }
 
     &.btn-white {
+        border: none;
         background: white;
         color: black;
-        border: none;
+
+        &:hover {
+            color: white;
+            background: black;
+        }
     }
 }
 
@@ -238,6 +238,28 @@ h6 {
 
     img {
         width: 100%;
+    }
+}
+
+.title-btn-text-layout {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {}
+
+    button,
+    a {
+        justify-self: end;
+    }
+
+    p {
+        grid-column: 1 / 3;
     }
 }
 

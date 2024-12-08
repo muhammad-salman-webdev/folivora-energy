@@ -92,3 +92,26 @@ respMenuBtn.addEventListener("change", () => {
     }, 10); // Small delay for initiating animation smoothly
   }
 });
+
+// Animating the header on scrolls
+
+const header = document.querySelector("section .header-section#header-global");
+
+window.addEventListener("scroll", () => {
+  const threshold = window.innerHeight * 0.5; // 50% of the viewport height
+  if (window.scrollY > threshold) {
+    // Add class to animate the header in
+    header.classList.add("show");
+    setTimeout(() => {
+      header.classList.add("anim");
+    }, 10);
+  } else {
+    if (header.classList.contains("show")) {
+      // Remove class to hide the header
+      header.classList.remove("anim");
+      setTimeout(() => {
+        header.classList.remove("show");
+      }, 600);
+    }
+  }
+});

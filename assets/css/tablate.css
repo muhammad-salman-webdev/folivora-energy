@@ -41,8 +41,8 @@
     }
 
     .btn {
-        padding: 4px 12px;
-        font-size: 10px;
+        padding: 6px 12px;
+        font-size: 14px;
     }
 
     .divider-line {
@@ -50,6 +50,11 @@
     }
 
     /* Hero Content  */
+    .hero-section {
+        padding: 10vh 0 30vh;
+        min-height: unset;
+    }
+
     .hero-content {
         margin: 0 auto;
         text-align: center;
@@ -108,20 +113,6 @@
         .card {
             width: 90%;
             margin: 0 auto;
-        }
-    }
-
-    .folivora-info-section {
-        & .folivora-info-container {
-            .info-boxes {
-                /* flex-wrap: wrap; */
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-
-                .info-box {
-                    width: 100%
-                }
-            }
         }
     }
 

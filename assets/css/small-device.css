@@ -35,11 +35,6 @@
         font-size: 17px;
     }
 
-    .btn {
-        padding: 4px 12px;
-        font-size: 10px;
-    }
-
     .hero-content {
         h1 {
             width: 89%;
@@ -61,11 +56,11 @@
     }
 
     .sloth-brain-section {
+        gap: 20px;
+        flex-direction: column;
+
         .slothbrain-intro {
             .play-icon {
-                width: 30px;
-                height: 30px;
-
                 i {
                     font-size: 12px;
                     padding-left: 2px;

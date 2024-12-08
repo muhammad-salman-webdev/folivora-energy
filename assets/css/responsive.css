@@ -11,18 +11,25 @@
         padding: 8px 28px;
     }
 
+    body.paused {
+        max-height: 100vh;
+        overflow: hidden;
+    }
+
     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     /* --------Header Section------ */
     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     /* Header Nav */
+    .header-hold-box {
+        min-height: 80px;
+    }
+
     .header-section {
         height: 80px;
 
         .resp-menu-toggle-btn {
             display: block;
         }
-
-        .container {}
 
         .header-container {
             .contact-btn {
@@ -32,8 +39,6 @@
 
         .logo {
             width: 140px;
-
-            img {}
         }
 
         .navbar-container {
@@ -196,7 +201,8 @@
         }
 
         .toggle-btn {
-            input {}
+            display: block;
+            margin-left: 10px;
         }
     }
 

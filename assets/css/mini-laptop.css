@@ -6,9 +6,38 @@
         font-size: 30px;
     }
 
+    .content-video-section {
+        .text-video-row {
+            flex-direction: column-reverse;
+            gap: 16px;
+            margin-top: 20px;
+
+            .text-col {
+                width: 100%;
+            }
+
+            .video-col {
+                width: 100%;
+            }
+        }
+    }
+
     .header-container {
         .logo {
             width: 120px;
+        }
+    }
+
+    .folivora-info-section {
+        & .folivora-info-container {
+            .info-boxes {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                .info-box {
+                    width: 100%
+                }
+            }
         }
     }
 
