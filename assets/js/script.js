@@ -72,7 +72,7 @@ const navBox = navElem.querySelector("nav");
 
 respMenuBtn.addEventListener("change", () => {
   // Prevent body scrolling when the menu is active
-  document.body.classList.toggle("paused");
+  // document.body.classList.toggle("paused");
 
   if (navElem.classList.contains("show")) {
     // Close the menu with animations
