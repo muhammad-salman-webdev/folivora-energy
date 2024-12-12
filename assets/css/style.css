@@ -18,7 +18,7 @@
     height: 112px;
     border-bottom: 2px solid #D49A49;
     box-shadow: 0px 0px 16px 0px #00000040;
-    transition: all .6s ease;
+    transition: all .4s ease;
     background: white;
 
     &.show {
@@ -26,7 +26,7 @@
         left: 0;
         right: 0;
         z-index: 999;
-        top: -200px;
+        top: -120px;
     }
 
     &.anim {
@@ -99,6 +99,14 @@
                         img {
                             width: 20px;
                             margin-right: 7px;
+                        }
+                    }
+
+                    &._active {
+                        &>.submenu-triger {
+                            a {
+                                color: rgb(23 127 61);
+                            }
                         }
                     }
 
@@ -472,17 +480,9 @@
 /* ------------------------------ */
 /* START :: Industry  Container 5 */
 /* ------------------------------ */
-.industry-section {
-    background-image: url("../media/images/industry-bg.png");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
 .industry-container {
-    padding: 0px 0 116px;
+    padding: 100px 0 116px;
+    display: flex;
 
     .industry-content {
         .industry-head {
@@ -577,6 +577,7 @@
     border-radius: 16px;
     background-color: #ffffff6e;
     display: none;
+    background: red;
     transform: translateY(400px) scale(0.7);
     transition: all .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition: all .8s cubic-bezier(0.57, 1.03, 0.58, 0.31);
@@ -913,3 +914,44 @@
 .footer-container>a {
     color: white;
 }
+
+/* **************************** */
+/* **************************** */
+/* **************************** */
+/* **************************** */
+/* **************************** */
+/* **************************** */
+/* **************************** */
+/* **************************** */
+/* **************************** */
+/* Services Page CSS :: Start   */
+.industry-container {
+    display: grid;
+
+    /* grid-template-columns: repeat(2, 1fr); */
+    h1 {
+        grid-column: 1/2;
+        margin-top: 30px;
+    }
+
+    .industry-content {
+        grid-column: 1/2;
+        align-items: center;
+    }
+
+    .industry-image {
+        grid-column: 2/3;
+        align-items: center;
+    }
+}
+
+/* Services Page CSS :: End */
+/* **************************** */
+/* **************************** */
+/* **************************** */
+/* **************************** */
+/* **************************** */
+/* **************************** */
+/* **************************** */
+/* **************************** */
+/* **************************** */

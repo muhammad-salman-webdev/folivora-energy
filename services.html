@@ -12,7 +12,7 @@
       type="image/x-icon" />
 
     <!-- Site Title -->
-    <title>Services - Folivora Energy</title>
+    <title>Home - Folivora Energy</title>
 
     <!-- FontAwesome Basic Icons -->
     <link
@@ -40,183 +40,192 @@
     <!-- START :: Header Section -->
     <!-- ----------------------- -->
 
-    <section class="header-section">
-      <div class="container">
-        <header class="header-container">
-          <!-- Logo -->
-          <div class="logo">
-            <img
-              src="assets/media/images/svg-icons/folivora-energy-logo.svg"
-              alt="#" />
-          </div>
-          <!-- NavBar -->
-          <div class="navbar-container">
-            <nav>
-              <label class="toggle-btn-x" for="menu-bar">
-                <i class="fa-solid fa-x"></i>
+    <section class="header-hold-box">
+      <div class="header-section" id="header-global">
+        <div class="container">
+          <header class="header-container">
+            <!-- Logo -->
+            <a href="/" class="logo">
+              <img
+                src="assets/media/images/svg-icons/folivora-energy-logo.svg"
+                alt="#" />
+            </a>
+            <!-- NavBar -->
+            <div class="navbar-container" data-navbar-container>
+              <nav>
+                <ul id="header-nav-main">
+                  <!-- NavBar Item -->
+                  <li>
+                    <!-- Sub Triger -->
+                    <div class="submenu-triger">
+                      <a>
+                        <span>Services</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </a>
+                    </div>
+
+                    <!-- Sub Menu -->
+                    <div class="submenu">
+                      <ul>
+                        <!--  -->
+                        <li>
+                          <a href="/services.html?service=1">
+                            <span>Service Sub Menu #1</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li>
+                          <a href="/services.html?service=2">
+                            <span>Service Sub Menu #2</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li>
+                          <a href="/services.html?service=3">
+                            <span>Service Sub Menu #3</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <!-- NavBar Item -->
+                  <li>
+                    <!-- Sub Triger -->
+                    <div class="submenu-triger">
+                      <a>
+                        <span>Products</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </a>
+                    </div>
+
+                    <!-- Sub Menu -->
+                    <div class="submenu">
+                      <ul>
+                        <!--  -->
+                        <li>
+                          <a href="/products.html?product=1">
+                            <span>Product Sub Menu #1</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li>
+                          <a href="/products.html?product=2">
+                            <span>Product Sub Menu #2</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li>
+                          <a href="/products.html?product=3">
+                            <span>Product Sub Menu #3</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <!-- NavBar Item -->
+                  <li>
+                    <!-- Sub Triger -->
+                    <div class="submenu-triger">
+                      <a>
+                        <span>Clients</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </a>
+                    </div>
+
+                    <!-- Sub Menu -->
+                    <div class="submenu">
+                      <ul>
+                        <!--  -->
+                        <li>
+                          <a href="clients.html?client=1">
+                            <span>Client Sub Menu #1</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li>
+                          <a href="clients.html?client=2">
+                            <span>Client Sub Menu #2</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li>
+                          <a href="clients.html?client=3">
+                            <span>Client Sub Menu #3</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <!-- NavBar Item -->
+                  <li class="_active">
+                    <!-- Sub Triger -->
+                    <div class="submenu-triger">
+                      <a href="about-us.html">
+                        <span>About Us</span>
+                      </a>
+                    </div>
+                  </li>
+
+                  <!-- NavBar Item -->
+                  <li>
+                    <!-- Sub Triger -->
+                    <div class="submenu-triger">
+                      <a href="contact-us.html">
+                        <span>Contact</span>
+                      </a>
+                    </div>
+                  </li>
+
+                  <!-- NavBar Item -->
+                  <li class="lang-selector">
+                    <!-- Sub Triger -->
+                    <div class="submenu-triger">
+                      <a>
+                        <img
+                          src="assets/media/images/germen-flag.avif"
+                          alt="#" />
+                        <span>Germen</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </a>
+                    </div>
+
+                    <!-- Sub Menu -->
+                    <div class="submenu">
+                      <ul>
+                        <!--  -->
+                        <li>
+                          <a href="#">
+                            <img
+                              src="assets/media/images/us-flag.jpg"
+                              alt="#" />
+                            <span>English</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- Button -->
+            <div class="contact-btn">
+              <a href="#" class="btn btn-light"> Write to us </a>
+            </div>
+
+            <!-- Burger Icon  -->
+            <div class="resp-menu-toggle-btn">
+              <input type="checkbox" id="menu-check" />
+              <label for="menu-check" class="menu-icon">
+                <div class="menu_bars"></div>
               </label>
-              <ul id="header-nav-main">
-                <!-- NavBar Item -->
-                <li>
-                  <!-- Sub Triger -->
-                  <div class="submenu-triger">
-                    <a>
-                      <span>Services</span>
-                      <i class="fa-regular fa-chevron-down"></i>
-                    </a>
-                  </div>
-
-                  <!-- Sub Menu -->
-                  <div class="submenu">
-                    <ul>
-                      <!--  -->
-                      <li>
-                        <a href="#">
-                          <span>Sub Menu Item</span>
-                        </a>
-                      </li>
-                      <!--  -->
-                      <li>
-                        <a href="#">
-                          <span>Sub Menu Item</span>
-                        </a>
-                      </li>
-                      <!--  -->
-                      <li>
-                        <a href="#">
-                          <span>Sub Menu Item</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <!-- NavBar Item -->
-                <li>
-                  <!-- Sub Triger -->
-                  <div class="submenu-triger">
-                    <a>
-                      <span>Products</span>
-                      <i class="fa-regular fa-chevron-down"></i>
-                    </a>
-                  </div>
-
-                  <!-- Sub Menu -->
-                  <div class="submenu">
-                    <ul>
-                      <!--  -->
-                      <li>
-                        <a href="#">
-                          <span>Sub Menu Item</span>
-                        </a>
-                      </li>
-                      <!--  -->
-                      <li>
-                        <a href="#">
-                          <span>Sub Menu Item</span>
-                        </a>
-                      </li>
-                      <!--  -->
-                      <li>
-                        <a href="#">
-                          <span>Sub Menu Item</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <!-- NavBar Item -->
-                <li>
-                  <!-- Sub Triger -->
-                  <div class="submenu-triger">
-                    <a>
-                      <span>Clients</span>
-                      <i class="fa-regular fa-chevron-down"></i>
-                    </a>
-                  </div>
-
-                  <!-- Sub Menu -->
-                  <div class="submenu">
-                    <ul>
-                      <!--  -->
-                      <li>
-                        <a href="#">
-                          <span>Sub Menu Item</span>
-                        </a>
-                      </li>
-                      <!--  -->
-                      <li>
-                        <a href="#">
-                          <span>Sub Menu Item</span>
-                        </a>
-                      </li>
-                      <!--  -->
-                      <li>
-                        <a href="#">
-                          <span>Sub Menu Item</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <!-- NavBar Item -->
-                <li>
-                  <!-- Sub Triger -->
-                  <div class="submenu-triger">
-                    <a>
-                      <span>About Us</span>
-                    </a>
-                  </div>
-                </li>
-                <!-- NavBar Item -->
-                <li>
-                  <!-- Sub Triger -->
-                  <div class="submenu-triger">
-                    <a>
-                      <span>Contact</span>
-                    </a>
-                  </div>
-                </li>
-                <!-- NavBar Item -->
-                <li class="lang-selector">
-                  <!-- Sub Triger -->
-                  <div class="submenu-triger">
-                    <a>
-                      <img src="assets/media/images/germen-flag.avif" alt="#" />
-                      <span>German</span>
-                      <i class="fa-regular fa-chevron-down"></i>
-                    </a>
-                  </div>
-
-                  <!-- Sub Menu -->
-                  <div class="submenu">
-                    <ul>
-                      <!--  -->
-                      <li>
-                        <a href="#">
-                          <img src="assets/media/images/us-flag.jpg" alt="#" />
-                          <span>English</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <!-- Button -->
-          <div class="contact-btn">
-            <a href="#" class="btn btn-light"> Write to us </a>
-          </div>
-
-          <!-- Burger Icon  -->
-          <label class="toggle-btn">
-            <i class="fa-solid fa-bars"></i>
-            <input type="checkbox" id="menu-bar" />
-          </label>
-        </header>
+            </div>
+          </header>
+        </div>
       </div>
     </section>
-
     <!-- ------------------------>
     <!-- END :: Header Section -->
     <!-- --------------------- -->
@@ -260,12 +269,13 @@
     <!--    START :: Industry Section 3   -->
     <!-- ----------------------------------->
 
-    <section class="industry-section">
+    <section class="serrvices-industry-section" style="display: none">
       <div class="container">
-        <div class="industry-container">
+        <div class="serrvices-industry-container">
+          <!-- Industry Heading  -->
+          <h1>INDUSTRY</h1>
           <!-- About Content  -->
           <div class="industry-content">
-            <h1>INDUSTRY</h1>
             <p
               >Complex interdependencies between energy-intensive production
               lines and energy supply components are crucial for manufacturing
@@ -330,11 +340,11 @@
 
     <!-- ################################# -->
     <!-- ################################# -->
-
+    <!-- 
     <section class="real-state-section">
       <div class="container">
         <div class="real-state-container">
-          <!-- Real State Heading  -->
+          Real State Heading 
           <div class="real-state-head">
             <h1>REAL STATE</h1>
             <p
@@ -347,9 +357,9 @@
             </p>
           </div>
 
-          <!-- Real State  Media Container -->
+          Real State  Media Container
           <div class="real-state-media-container">
-            <!-- Real State Content  -->
+            Real State Content 
             <div class="real-state-content">
               <p
                 ><strong
@@ -389,18 +399,18 @@
                 </ul>
               </nav>
 
-              <!-- Explorer Button  -->
+              Explorer Button 
               <a href="#" class="explore-btn">Explore our solutions</a>
             </div>
 
-            <!-- Real State Image  -->
+            Real State Image 
             <div class="real-state-image">
               <img src="assets/media/images/real-state-image.png" alt="#" />
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- START :: DIVIDER -->
     <div class="container">
@@ -423,11 +433,11 @@
     <!--------------------------------------->
     <!-- START :: Infrastructure section 5 -->
     <!--------------------------------------->
-
+    <!-- 
     <section class="industry-section">
       <div class="container">
         <div class="industry-container">
-          <!-- About Content  -->
+          About Content 
           <div class="industry-content">
             <h1>INFRASTRUCTURES</h1>
             <p
@@ -465,17 +475,17 @@
               </ul>
             </nav>
 
-            <!-- Explorer Button  -->
+            Explorer Button 
             <a href="#" class="explore-btn">Explore our Products</a>
           </div>
 
-          <!-- Industry Image  -->
+          Industry Image 
           <div class="industry-image">
             <img src="assets/media/images/infrastructure-image.png" alt="#" />
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- ################################# -->
     <!-- ################################# -->
@@ -496,11 +506,11 @@
     <!------------------------------------>
     <!-- START :: Residential section 6 -->
     <!------------------------------------>
-
+    <!-- 
     <section class="residential-section">
       <div class="container">
         <div class="residential-container">
-          <!-- Residential Heading  -->
+          Residential Heading 
           <div class="residentail-head">
             <h2>Case Studies</h2>
             <button class="btn">Explore our Services</button>
@@ -519,7 +529,7 @@
             </div>
           </div>
 
-          <!-- Residential Main Container -->
+          Residential Main Container
           <div class="residentail-main-container">
             <h2>Residential </h2>
             <p>
@@ -528,9 +538,9 @@
               buildings.
             </p>
 
-            <!-- Residential Cards  -->
+            Residential Cards 
             <div class="residential-cards">
-              <!-- Residential Card No 1 -->
+              Residential Card No 1
               <div class="residential-card">
                 <h3>Optimization Goals</h3>
 
@@ -547,7 +557,7 @@
                   <strong>16% energy-related cost savings.</strong>
                 </div>
               </div>
-              <!-- Residential Card No 2 -->
+              Residential Card No 2
               <div class="residential-card">
                 <h3>Energy System Details</h3>
 
@@ -576,7 +586,7 @@
                   </ul>
                 </div>
               </div>
-              <!-- Residential Card No 3 -->
+              Residential Card No 3
               <div class="residential-card">
                 <h3>Optimization Goals</h3>
 
@@ -597,7 +607,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- ################################# -->
     <!-- ################################# -->
@@ -615,11 +625,11 @@
     <!-- --------------------------------------->
     <!-- START :: See Our Work Small Section 9-->
     <!-- --------------------------------------->
-
+    <!-- 
     <section class="goto-work-section">
       <div class="container">
         <div class="goto-work-container">
-          <!-- Title -->
+          Title
           <h1 class="title-light">
             Need More Information About Our Process?
           </h1>
@@ -628,14 +638,14 @@
             or visit our products page to explore our software solutions.
           </p>
 
-          <!-- Go To Button  -->
+          Go To Button 
           <div class="goto-btns">
             <a href="#" class="btn btn-white">Explore Our Products</a>
             <a href="#" class="overview-link">Download Process Overview</a>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- --------------------------------- -->
     <!-- END :: See Our Work Small Section -->
@@ -658,7 +668,7 @@
     <!-- ----------------------------------- -->
     <!--  START :: folivora Form Section 10 -->
     <!-- ----------------------------------- -->
-
+    <!-- 
     <section class="form-section">
       <div class="container">
         <div class="form-container">
@@ -666,7 +676,7 @@
 
           <p>Drop your details here, and we will get back to you.</p>
 
-          <!-- Form Image  -->
+          Form Image 
           <div class="contactus-form">
             <div class="form-image">
               <img src="assets/media/images/contactus-form.png" alt="#" />
@@ -674,7 +684,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- ----------------------------------- -->
     <!--  END   :: folivora Form Section     -->
@@ -693,35 +703,29 @@
         <div class="footer-container">
           <!-- Footer Icon  -->
           <div class="footer-logo">
-            <img
-              src="assets/media/svg-icons/folivora-energy-logo.svg"
-              alt="#" />
+            <img src="assets/media/images/svg-icons/footer-icon.svg" alt="#" />
           </div>
 
           <!-- Folivora Links  -->
           <nav class="folivora-links">
             <ul>
               <li>
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
-                <a href="#">Services</a>
+                <a href="services.html">Services</a>
               </li>
               <li>
-                <a href="#">Products</a>
+                <a href="products.html">Products</a>
               </li>
               <li>
-                <a href="#">Clients</a>
-              </li>
-
-              <li>
-                <a href="#">Clients</a>
+                <a href="clients.html">Clients</a>
               </li>
               <li>
                 <a href="#">Corporate</a>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <a href="contact-us.html">Contact</a>
               </li>
               <li>
                 <a href="#">Privacy</a>
@@ -731,20 +735,24 @@
               </li>
             </ul>
           </nav>
-          <!-- <div class="folivora-links">
-              </div> -->
 
           <p>Folivora Energy GmbH Bahnhofstraße 3664367 Mühltal Deutschland </p>
 
-          <a>contact@folivoraenergy.com</a>
+          <a href="mailto:contact@folivoraenergy.com" target="_blank">
+            contact@folivoraenergy.com
+          </a>
         </div>
       </div>
     </footer>
 
-    <!-- ----------------------------------- -->
-    <!-- END  :: folivora Footer Section     -->
-    <!-- ----------------------------------- -->
-
-    <div style="height: 100vh"></div>
+    <!-- ------------------------------- -->
+    <!-- END  :: folivora Footer Section -->
+    <!-- ------------------------------- -->
   </body>
+
+  <!-- Swiper JS File -->
+  <script src="assets/js/swiper.min.js"></script>
+
+  <!-- Universal JS File -->
+  <script src="assets/js/script.js"></script>
 </html>

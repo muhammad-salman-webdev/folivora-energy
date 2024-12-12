@@ -93,6 +93,19 @@ respMenuBtn.addEventListener("change", () => {
   }
 });
 
+navElem.addEventListener("click", (e) => {
+  if (e.target === navElem) {
+    respMenuBtn.checked = false;
+    // Close the menu with animations
+    navElem.classList.remove("anim");
+
+    setTimeout(() => {
+      navElem.classList.remove("show");
+      navBox.classList.remove("anim");
+    }, 300); // Delay ensures animations are completed before hiding
+  }
+});
+
 // Animating the header on scrolls
 
 const header = document.querySelector("section .header-section#header-global");
@@ -111,7 +124,7 @@ window.addEventListener("scroll", () => {
       header.classList.remove("anim");
       setTimeout(() => {
         header.classList.remove("show");
-      }, 600);
+      }, 400);
     }
   }
 });
