@@ -504,6 +504,7 @@
 .industry-cards {
     display: flex;
     justify-content: space-between;
+    grid-column: 1/3;
 
     .card {
         width: 30%;
@@ -577,7 +578,6 @@
     border-radius: 16px;
     background-color: #ffffff6e;
     display: none;
-    background: red;
     transform: translateY(400px) scale(0.7);
     transition: all .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition: all .8s cubic-bezier(0.57, 1.03, 0.58, 0.31);
@@ -927,11 +927,16 @@
 /* Services Page CSS :: Start   */
 .industry-container {
     display: grid;
+    align-items: center;
 
     /* grid-template-columns: repeat(2, 1fr); */
     h1 {
         grid-column: 1/2;
         margin-top: 30px;
+    }
+
+    button {
+        grid-column: 2/3;
     }
 
     .industry-content {
