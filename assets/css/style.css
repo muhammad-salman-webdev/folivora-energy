@@ -84,7 +84,7 @@
                     &:has(._active) {
                         .submenu-triger {
                             a {
-                                color: var(--primary);
+                                color: rgb(23 127 61);
                             }
                         }
                     }

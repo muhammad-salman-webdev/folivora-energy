@@ -9,6 +9,11 @@
     transition: all .3s ease;
 }
 
+*::selection {
+    background-color: #885e20;
+    color: white;
+}
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
