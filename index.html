@@ -244,17 +244,17 @@
       <!-- BG Image/Video -->
       <div class="hero__bg">
         <!-- 1 same image on all screen sizes -->
-        <img src="assets/media/images/hero-image.png" alt="#">
-
-        <!-- Change Image on difference screen sizes -->
-        <picture>
-          <!-- Image for small screens -->
-          <source srcset="small-image.jpg" media="(max-width: 600px)">
-          <!-- Image for medium screens -->
-          <source srcset="medium-image.jpg" media="(max-width: 1024px)">
-          <!-- Default image for larger screens -->
-          <img src="large-image.jpg" alt="Responsive image">
-        </picture>
+        <img 
+        src="assets/media/images/hero-bgs/home-hero-bg-desktop.png" 
+        srcset="
+          assets/media/images/hero-bgs/home-hero-bg-mobile.png 600w, 
+          assets/media/images/hero-bgs/home-hero-bg-desktop.png 2000w" 
+        sizes="(max-width: 600px) 100vw, 100vw" 
+        alt="Responsive hero image">
+      
+  
+        <!-- 1 Same Video on all screen sizes -->
+ 
       </div>
 
       <!-- Content -->

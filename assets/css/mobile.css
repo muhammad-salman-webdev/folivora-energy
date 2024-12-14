@@ -56,20 +56,6 @@
         }
     }
 
-    .folivora-info-section {
-        & .folivora-info-container {
-            & .titles {
-                p {
-                    margin: 0;
-                }
-            }
-
-            .info-boxes {
-                grid-template-columns: repeat(1, 1fr);
-            }
-        }
-    }
-
     .industry-container {
         & .industry-content {
             .industry-head {
