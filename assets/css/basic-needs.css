@@ -9,6 +9,13 @@
     transition: all .3s ease;
 }
 
+/* Global Reusable Variables*/
+:root {
+    --primary: #14552C;
+    --secondary: #CB9946;
+    --black: #0D0B0B;
+}
+
 *::selection {
     background-color: #885e20;
     color: white;
@@ -83,12 +90,6 @@ h6 {
     font-size: 14px;
     font-weight: 700;
     line-height: 23.8px;
-}
-
-/* Global Reusable Variables*/
-:root {
-    --primary: #14552C;
-    --secondary: #CB9946;
 }
 
 /* Gloabl Reusable Classes */

@@ -356,6 +356,7 @@
         letter-spacing: -0.04em;
         line-height: 89px;
         position: relative;
+        z-index: 2;
 
         &>span {
             position: relative;
@@ -482,7 +483,6 @@
 /* ------------------------------ */
 .industry-container {
     padding: 100px 0 116px;
-    display: flex;
 
     .industry-content {
         .industry-head {
@@ -925,31 +925,6 @@
 /* **************************** */
 /* **************************** */
 /* Services Page CSS :: Start   */
-.industry-container {
-    display: grid;
-    align-items: center;
-
-    /* grid-template-columns: repeat(2, 1fr); */
-    h1 {
-        grid-column: 1/2;
-        margin-top: 30px;
-    }
-
-    button {
-        grid-column: 2/3;
-    }
-
-    .industry-content {
-        grid-column: 1/2;
-        align-items: center;
-    }
-
-    .industry-image {
-        grid-column: 2/3;
-        align-items: center;
-    }
-}
-
 /* Services Page CSS :: End */
 /* **************************** */
 /* **************************** */
