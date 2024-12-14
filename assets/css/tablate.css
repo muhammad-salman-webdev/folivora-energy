@@ -105,15 +105,21 @@
 
     .industry-cards {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         width: 100%;
         gap: 30px;
+        max-width: 100%;
+        overflow: auto;
+        padding: 10px 4px 30px 4px;
 
         .card {
             width: 90%;
             margin: 0 auto;
+            min-width: 240px;
         }
+    }
+
+    .industry-cards-desc-container {
+        margin: 20px 0 0;
     }
 
     .folivora-info-section {

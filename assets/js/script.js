@@ -36,8 +36,23 @@ industryTabsBtns.forEach((tabBtn, index) => {
 // Initializing Swiper.js for the partner section
 const swiper = new Swiper(".partner-swiper[data-partner-swiper]", {
   // Configuring Swiper with 6 visible slides and enabling infinite loop
-  slidesPerView: 6,
+  slidesPerView: 2,
   loop: true,
+  breakpoints: {
+    // When the screen width is 600px or more
+    600: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    992: {
+      slidesPerView: 5,
+    },
+    1024: {
+      slidesPerView: 6,
+    },
+  },
 });
 
 // Managing submenu toggling for navigation items with submenus
@@ -107,7 +122,6 @@ navElem.addEventListener("click", (e) => {
 });
 
 // Animating the header on scrolls
-
 const header = document.querySelector("section .header-section#header-global");
 
 window.addEventListener("scroll", () => {

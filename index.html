@@ -243,18 +243,22 @@
     <section class="hero-section">
       <!-- BG Image/Video -->
       <div class="hero__bg">
-        <!-- 1 same image on all screen sizes -->
-        <img 
-        src="assets/media/images/hero-bgs/home-hero-bg-desktop.png" 
-        srcset="
-          assets/media/images/hero-bgs/home-hero-bg-mobile.png 600w, 
-          assets/media/images/hero-bgs/home-hero-bg-desktop.png 2000w" 
-        sizes="(max-width: 600px) 100vw, 100vw" 
-        alt="Responsive hero image">
-      
-  
-        <!-- 1 Same Video on all screen sizes -->
- 
+        <picture>
+          <!-- Mobile image for screens smaller than 600px -->
+          <source
+            media="(max-width: 600px)"
+            srcset="assets/media/images/hero-bgs/home-hero-bg-mobile.png" />
+
+          <!-- Desktop image for larger screens -->
+          <source
+            media="(min-width: 601px)"
+            srcset="assets/media/images/hero-bgs/home-hero-bg-desktop.png" />
+
+          <!-- Fallback image for browsers that do not support <picture> -->
+          <img
+            src="assets/media/images/hero-bgs/home-hero-bg-desktop.png"
+            alt="Responsive hero image" />
+        </picture>
       </div>
 
       <!-- Content -->
@@ -319,9 +323,11 @@
           <div class="info-boxes">
             <!-- Box -->
             <div class="info-box">
-              <img
-                src="/assets/media/images/svg-icons/check-mark-icon.svg"
-                alt="" />
+              <div class="icon-box">
+                <img
+                  src="/assets/media/images/svg-icons/check-mark-icon.svg"
+                  alt="#" />
+              </div>
               <h4>Engineering expertise</h4>
               <p class="text-tiny">
                 Extensive engineering expertise in mechanical engineering,
@@ -331,7 +337,11 @@
             </div>
             <!-- Box -->
             <div class="info-box">
-              <img src="/assets/media/images/svg-icons/stats-icon.svg" alt="" />
+              <div class="icon-box">
+                <img
+                  src="/assets/media/images/svg-icons/stats-icon.svg"
+                  alt="#" />
+              </div>
               <h4>Tailored Solutions</h4>
               <p class="text-tiny">
                 We adapt 100% to the customer's problems and build the most
@@ -340,9 +350,11 @@
             </div>
             <!-- Box -->
             <div class="info-box">
-              <img
-                src="/assets/media/images/svg-icons/energy-icon.svg"
-                alt="" />
+              <div class="icon-box">
+                <img
+                  src="/assets/media/images/svg-icons/energy-icon.svg"
+                  alt="#" />
+              </div>
               <h4>Holistic Approach</h4>
               <p class="text-tiny">
                 We combine consulting services with in-house products to create
@@ -351,7 +363,11 @@
             </div>
             <!-- Box -->
             <div class="info-box">
-              <img src="/assets/media/images/svg-icons/heart-icon.svg" alt="" />
+              <div class="icon-box">
+                <img
+                  src="/assets/media/images/svg-icons/heart-icon.svg"
+                  alt="#" />
+              </div>
               <h4>Sector knowledge</h4>
               <p class="text-tiny">
                 We have experience in the real estate, manufacturing industry
@@ -392,8 +408,6 @@
                   <strong>Save money, save costs, save time</strong> and decide
                   quantitatively!
                 </p>
- 
-                <strong>
               </div>
 
               <!-- Right Side Video -->
@@ -403,7 +417,7 @@
                   width="100%"
                   height="100%"
                   frameborder="0"
-                  allow="fullscreen; picture-in-picture"
+                  allow="autoplay; fullscreen; picture-in-picture"
                   allowfullscreen>
                 </iframe>
               </div>
@@ -438,7 +452,7 @@
     <section class="industry-section" data-change-industry-tabs>
       <div class="container">
         <div class="industry-container">
-          <!-- Industry Content  --> 
+          <!-- Industry Content  -->
           <div class="indus-product-head title-btn-text-layout">
             <h1>Our Product</h1>
             <a href="#" class="btn btn-light">Explore Our Products</a>
@@ -448,7 +462,7 @@
             </p>
           </div>
           <!-- Industry Card  -->
-          <div class="industry-cards"  >
+          <div class="industry-cards">
             <!-- Card No 1 -->
             <div class="card active">
               <h2>Industry</h2>
@@ -477,8 +491,7 @@
           </div>
 
           <!-- Description Boxes -->
-          <div
-            class="industry-cards-desc-container">
+          <div class="industry-cards-desc-container">
             <!-- Industry Description  -->
             <div class="industry-desc show anim">
               <p>
@@ -608,60 +621,6 @@
                 </div>
               </div>
             </div>
-
-            <!-- ############### -->
-            <!-- Don't Change it -->
-            <!-- ############### -->
-            <div style="opacity: 0; user-select: none; visibility: none">
-              <!-- Industry Description  -->
-              <div class="industry-desc">
-                <p>
-                  2 To help utilities manage complex energy demands, Folivora
-                  Energy optimizes balancing group management, adapting to
-                  changing conditions with virtual modeling. This ensures
-                  efficient, economic, and sustainable operations.
-                </p>
-
-                <div class="desc-items">
-                  <nav class="desc-list">
-                    <ul>
-                      <li>
-                        <a href="#">Reduces load balancing costs</a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          Adjusts dynamically to energy market and weather
-                          changes
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          Leverages automated, flexible decision-making
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          Ensures both ecological and economic efficiency
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
-
-                  <!-- About Description -->
-                  <div class="industry-links">
-                    <a class="btn btn-secondary">Get in touch</a>
-
-                    <a href="#" class="solution-link">
-                      Find out more about Solutions
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- ############### -->
-            <!-- Don't Change it -->
-            <!-- ############### -->
           </div>
         </div>
       </div>
@@ -670,6 +629,16 @@
     <!-- ----------------------------------->
     <!-- END :: Folivora Industry Section -->
     <!-- ----------------------------------->
+
+    <!-- ################################# -->
+    <!-- ################################# -->
+    <!-- ################################# -->
+
+    <!-- START :: DIVIDER -->
+    <div class="container">
+      <div class="divider-line"></div>
+    </div>
+    <!-- END :: DIVIDER -->
 
     <!-- ################################# -->
     <!-- ################################# -->

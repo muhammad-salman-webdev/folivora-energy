@@ -324,10 +324,12 @@
         z-index: -1;
 
         img,
-        video {
+        video,
+        picture {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: center;
         }
     }
 
@@ -469,16 +471,23 @@
                 gap: 10px;
 
                 img {
-                    display: block;
-                    width: 50px;
                     margin-bottom: 10px;
+                    transition: all .3s ease;
+                }
+
+                &:hover {
+                    cursor: default;
+
+                    img {
+                        transform: scale(1.1) translateY(4px);
+                    }
                 }
             }
         }
     }
 
     .content-video-section {
-        margin-top: 30px;
+        margin-top: 40px;
     }
 }
 
@@ -492,8 +501,6 @@
 /* START :: Industry  Container 5 */
 /* ------------------------------ */
 .industry-container {
-    padding: 100px 0 116px;
-
     .industry-content {
         .industry-head {
             display: flex;
@@ -593,7 +600,13 @@
     transition: all .8s cubic-bezier(0.57, 1.03, 0.58, 0.31);
     transition: all .8s ease;
     opacity: 0;
+    top: 0;
     position: absolute;
+
+    &:first-child {
+        display: block !important;
+        position: relative !important;
+    }
 
     &.show {
         display: block;
@@ -703,8 +716,6 @@
         width: 50%;
 
         .icon-image {
-            width: 40px;
-
             img {
                 width: 100%;
             }

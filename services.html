@@ -238,26 +238,45 @@
     <!------------------------------>
     <!-- START :: Hero Section 2 --->
     <!------------------------------>
-
     <section class="hero-section">
+      <!-- BG Image/Video -->
+      <div class="hero__bg">
+        <img
+          src="assets/media/images/hero-bgs/home-hero-bg-desktop.png"
+          srcset="
+            assets/media/images/hero-bgs/home-hero-bg-mobile.png   600w,
+            assets/media/images/hero-bgs/home-hero-bg-desktop.png 2000w
+          "
+          sizes="(max-width: 600px) 100vw, 100vw"
+          alt="Responsive hero image" />
+      </div>
+
+      <!-- Content -->
       <div class="container">
         <div class="hero-container">
           <!-- Hero Content  -->
           <div class="hero-content">
-            <h1>Sector we serve</h1>
-            <p class="c-primary"> Tailores solutions for diverse sectors. </p>
+            <!-- <h1>Powering <span>Smart</span> Energy Systems and Processes</h1> -->
+            <h1>
+              <span> Sectors </span>
+              <br />
+              we serve
+            </h1>
 
             <!-- Sloth Brain Section  -->
             <div class="sloth-brain-section">
-              <a href="#" class="btn">Write to us</a>
+              <a href="contact-us.html" class="btn">Contact Us</a>
 
               <!-- Sloth Brain Intro -->
               <div class="slothbrain-intro">
-                <a class="play-icon">
+                <!-- Youtube Video Link -->
+                <a
+                  href="https://youtu.be/K4TOrB7at0Y"
+                  target="_blank"
+                  class="play-icon">
                   <i class="fa-solid fa-play"></i>
+                  <span>Introducing SlothBrAIn</span>
                 </a>
-
-                <span>See what we do</span>
               </div>
             </div>
           </div>

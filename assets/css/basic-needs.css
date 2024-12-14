@@ -194,6 +194,9 @@ h6 {
 
         .video-col {
             width: 50%;
+            border-radius: 6px;
+            overflow: hidden;
+            aspect-ratio: 16/9;
         }
     }
 }
