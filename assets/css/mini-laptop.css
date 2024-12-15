@@ -64,4 +64,16 @@
     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     /*       START :: Industry Container     */
     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    .industry-container {
+        grid-template-columns: repeat(1, 100%);
+        grid-template-areas:
+            'headings'
+            'image'
+            'content' !important;
+
+        .industry-image {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
 }

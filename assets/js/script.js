@@ -1,9 +1,9 @@
 // Selecting all industry tab buttons and corresponding tab content descriptions
 const industryTabsBtns = document.querySelectorAll(
-  "section.industry-section[data-change-industry-tabs] .industry-container > .industry-cards > .card"
+  "section.products-industry-section[data-change-industry-tabs] .products-industry-container > .industry-cards > .card"
 );
 const industryTabs = document.querySelectorAll(
-  "section.industry-section[data-change-industry-tabs] .industry-container > .industry-cards-desc-container > .industry-desc"
+  "section.products-industry-section[data-change-industry-tabs] .products-industry-container > .industry-cards-desc-container > .industry-desc"
 );
 
 // Adding click event listeners to each industry tab button

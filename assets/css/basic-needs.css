@@ -123,6 +123,21 @@ h6 {
     padding: 0;
 }
 
+.link {
+    color: #14552C;
+    font-size: 18px;
+    font-family: "poppins";
+    font-weight: 700;
+    text-decoration: underline;
+    max-width: max-content;
+    cursor: pointer;
+
+    &::selection {
+        color: white;
+        background: #14552C;
+    }
+}
+
 .btn {
     display: flex;
     align-items: center;
@@ -139,6 +154,11 @@ h6 {
     border: 1px solid #14552C;
     cursor: pointer;
     max-width: max-content;
+
+    &::selection {
+        color: white;
+        background: #1a723a;
+    }
 
     &:hover {
         background: #1a723a;

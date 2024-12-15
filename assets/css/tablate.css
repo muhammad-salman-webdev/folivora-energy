@@ -188,4 +188,28 @@
         flex-direction: column;
         gap: 10px;
     }
+
+    /* ########################### */
+    /* ########################### */
+    /* ########################### */
+    /* ########################### */
+    /* START ::    Services Page   */
+    /* ########################### */
+    .industry-container {
+        .industry-content {
+            .industry-list {
+                ul {
+                    li {
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            a {
+                margin-top: 45px;
+                text-align: center;
+            }
+        }
+    }
 }

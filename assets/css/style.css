@@ -500,20 +500,13 @@
 /* ------------------------------ */
 /* START :: Industry  Container 5 */
 /* ------------------------------ */
-.industry-container {
+.products-industry-container {
     .industry-content {
         .industry-head {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-    }
-}
-
-.industry-content {
-    p {
-        margin: 8px 0 56px;
-        color: #0D0B0BB2;
     }
 }
 
@@ -670,10 +663,6 @@
 /* ---------------------------- */
 /* START :: Product  Container 6 */
 /* ---------------------------- */
-.product-container {
-    padding-top: 80px;
-}
-
 .indus-product-head {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -946,6 +935,74 @@
 /* **************************** */
 /* **************************** */
 /* Services Page CSS :: Start   */
+/*  */
+/* Services Industry Container  */
+.industry-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: 'headings image' 'content image';
+    row-gap: 20px;
+
+    &:has(.industry-headings p) {
+        grid-template-areas: 'headings headings' 'content image';
+    }
+
+    .industry-headings {
+        grid-area: headings;
+        display: flex;
+        justify-content: end;
+        row-gap: 10px;
+        flex-direction: column;
+
+        p {
+            margin: 10px 0 0 0;
+        }
+    }
+
+    .industry-content {
+        grid-area: content;
+
+        p {
+            color: #0D0B0BB2;
+        }
+
+        &>a {
+            margin-top: 60px;
+            display: block;
+        }
+
+        .industry-list {
+            margin-top: 48px;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                li {
+                    color: black;
+                    font-weight: 700;
+
+                    i {
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+    .industry-image {
+        grid-area: image;
+        display: flex;
+        align-items: center;
+
+        img {
+            transform: scale(1.05);
+        }
+    }
+}
+
 /* Services Page CSS :: End */
 /* **************************** */
 /* **************************** */

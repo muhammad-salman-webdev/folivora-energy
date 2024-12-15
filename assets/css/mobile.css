@@ -78,22 +78,23 @@
         }
     }
 
-    .industry-content {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin-bottom: 20px;
+    .services-industry-container {}
 
-        h1 {
-            grid-column: 1/2;
-        }
-
-        p {
-            grid-row: 2/3;
-            margin-bottom: 20px;
-        }
+    .indus-product-head {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
 
         a {
-            grid-column: 1/3;
+            order: 3;
+        }
+    }
+
+    .services-list {
+        & ul {
+            li {
+                margin-left: -10px;
+            }
         }
     }
 
