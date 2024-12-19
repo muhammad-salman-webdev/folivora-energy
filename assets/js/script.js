@@ -36,23 +36,8 @@ industryTabsBtns.forEach((tabBtn, index) => {
 // Initializing Swiper.js for the partner section
 const swiper = new Swiper(".partner-swiper[data-partner-swiper]", {
   // Configuring Swiper with 6 visible slides and enabling infinite loop
-  slidesPerView: 2,
+  slidesPerView: 6,
   loop: true,
-  breakpoints: {
-    // When the screen width is 600px or more
-    600: {
-      slidesPerView: 3,
-    },
-    768: {
-      slidesPerView: 4,
-    },
-    992: {
-      slidesPerView: 5,
-    },
-    1024: {
-      slidesPerView: 6,
-    },
-  },
 });
 
 // Managing submenu toggling for navigation items with submenus
@@ -142,3 +127,13 @@ window.addEventListener("scroll", () => {
     }
   }
 });
+
+// Services Section Swiper
+const caseStudySwiper = new Swiper(
+  ".casestudy-swiper-section[data-services-casestudy-swiper] #casestudy-swiper",
+  {
+    slidesPerView: 1.1,
+    spaceBetween: 20,
+    centeredSlides: true,
+  }
+);

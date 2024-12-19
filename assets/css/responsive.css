@@ -88,14 +88,10 @@
                         width: 100%;
                         border-bottom: 1px solid black;
 
-                        &:not(:last-child) {}
-
                         &.active {
                             &>.submenu-triger {
                                 &>a {
                                     color: #14552C !important;
-
-                                    span {}
 
                                     i {
                                         transform: rotate(180deg) !important;
@@ -106,14 +102,6 @@
                             &>.submenu {
                                 grid-template-rows: 1fr;
                             }
-                        }
-
-                        &.lang-selector {
-                            .submenu-triger {
-                                a {}
-                            }
-
-                            img {}
                         }
 
                         &:not(.lang-selector) {
@@ -158,8 +146,6 @@
                                     }
                                 }
                             }
-
-                            &>.submenu {}
                         }
 
                         &>.submenu {
@@ -189,8 +175,6 @@
                                     a {
                                         padding: 12px 10px;
                                         font-size: 16px;
-
-                                        &:hover {}
                                     }
                                 }
                             }
@@ -224,5 +208,14 @@
     /* Sloth Brain Section  */
     .sloth-brain-section {
         margin: 0 auto;
+    }
+
+    /* Transform Container  */
+    .service-process-steps-container {
+        align-items: stretch;
+
+        &::before {
+            display: none;
+        }
     }
 }
