@@ -759,6 +759,8 @@
     border-radius: 16px;
     display: flex;
     flex-direction: column;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(16px);
 
     .icon-title {
         display: flex;
@@ -1059,6 +1061,12 @@
     }
 }
 
+.folivora-services-bg {
+    padding: 50px 0 125px;
+    background-image: url(../media/images//folivora-services-bg.png);
+    background-size: cover;
+}
+
 /* **************************** */
 /* **************************** */
 /* **************************** */
@@ -1068,13 +1076,20 @@
 /* **************************** */
 /* **************************** */
 /* **************************** */
-/* Client Page CSS :: Start   */
+/*   Client Page CSS :: Start   */
 #casestudy-swiper {
     margin-top: 50px;
 
     .swiper-slide {
-        border-radius: 14px;
+        border-radius: 32px;
         overflow: hidden;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: scale(0.9);
+
+        &.swiper-slide-active {
+            transform: scale(1.1);
+        }
     }
 }
 
@@ -1089,7 +1104,8 @@
         width: 24px;
         height: 24px;
         aspect-ratio: 1/1;
-        background-color: #50505014;
+        background-color: #505050;
+        margin: 0 !important;
 
         &.swiper-pagination-bullet-active {
             background-color: #D49A49;
@@ -1107,7 +1123,7 @@
 
 .residentail-container {
     padding: 48px 30px 60px 30px;
-    background: linear-gradient(to bottom, #55b7dd, #b0d267);
+    /* background: linear-gradient(to bottom, #55b7dd, #b0d267); */
     text-align: center;
     border-radius: 8px;
 
@@ -1125,7 +1141,9 @@
         padding: 24px 32px;
         width: 32%;
         border-radius: 8px;
-        border: 1px solid red;
+        background: #FFFFFF99;
+        backdrop-filter: blur(10px);
+        border-radius: 16px;
     }
 }
 

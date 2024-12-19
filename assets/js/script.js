@@ -133,12 +133,13 @@ const caseStudySwiper = new Swiper(
   ".casestudy-swiper-main[data-services-casestudy-swiper] #casestudy-swiper",
   {
     slidesPerView: 1,
-    spaceBetween: 20,
+    spaceBetween: 0,
     centeredSlides: true,
     grabCursor: true,
 
     pagination: {
       el: ".caseStudy-swiper-pagination[data-pagination]",
+      clickable: true,
     },
   }
 );
