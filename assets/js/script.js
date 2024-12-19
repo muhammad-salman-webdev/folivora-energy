@@ -130,10 +130,15 @@ window.addEventListener("scroll", () => {
 
 // Services Section Swiper
 const caseStudySwiper = new Swiper(
-  ".casestudy-swiper-section[data-services-casestudy-swiper] #casestudy-swiper",
+  ".casestudy-swiper-main[data-services-casestudy-swiper] #casestudy-swiper",
   {
-    slidesPerView: 1.1,
+    slidesPerView: 1,
     spaceBetween: 20,
     centeredSlides: true,
+    grabCursor: true,
+
+    pagination: {
+      el: ".caseStudy-swiper-pagination[data-pagination]",
+    },
   }
 );
