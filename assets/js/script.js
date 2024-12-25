@@ -38,6 +38,11 @@ const swiper = new Swiper(".partner-swiper[data-partner-swiper]", {
   // Configuring Swiper with 6 visible slides and enabling infinite loop
   slidesPerView: 6,
   loop: true,
+  speed: 3000, // Adjust speed to suit your needs
+  autoplay: {
+    delay: 1, // Set a non-zero delay for autoplay
+    disableOnInteraction: false, // Keep autoplay even if user interacts
+  },
 });
 
 // Managing submenu toggling for navigation items with submenus
