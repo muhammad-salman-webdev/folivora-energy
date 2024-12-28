@@ -258,7 +258,7 @@ h6 {
         }
 
         .partner-logo {
-            width: 160px;
+            width: 150px;
             margin: 0 auto;
 
             img {
@@ -269,7 +269,7 @@ h6 {
 }
 
 .icon-image {
-    width: 56px;
+    width: 46px;
     display: flex;
 
     img {

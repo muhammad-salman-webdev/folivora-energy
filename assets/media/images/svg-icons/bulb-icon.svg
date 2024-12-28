@@ -1,0 +1,25 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1.14286" y="1.14286" width="61.7143" height="61.7143" rx="26.2857" fill="#F4E6D1"/>
+<rect x="1.14286" y="1.14286" width="61.7143" height="61.7143" rx="26.2857" stroke="#FCFCFC" stroke-width="2.28571"/>
+<g filter="url(#filter0_i_2310_20208)">
+<rect x="9.14062" y="9.14307" width="45.7143" height="45.7143" rx="18.2857" fill="#D49A49"/>
+</g>
+<g clip-path="url(#clip0_2310_20208)">
+<path d="M36.5737 38.5714C37.0879 36.8625 38.154 35.4054 39.2094 33.9536C39.4879 33.5732 39.7665 33.1929 40.0344 32.8071C41.0951 31.2804 41.7165 29.4321 41.7165 27.4339C41.7165 22.2214 37.4951 18 32.2879 18C27.0808 18 22.8594 22.2214 22.8594 27.4286C22.8594 29.4268 23.4808 31.2804 24.5415 32.8018C24.8094 33.1875 25.0879 33.5679 25.3665 33.9482C26.4272 35.4 27.4933 36.8625 28.0022 38.5661H36.5737V38.5714ZM32.2879 45.4286C34.6558 45.4286 36.5737 43.5107 36.5737 41.1429V40.2857H28.0022V41.1429C28.0022 43.5107 29.9201 45.4286 32.2879 45.4286ZM28.0022 27.4286C28.0022 27.9 27.6165 28.2857 27.1451 28.2857C26.6737 28.2857 26.2879 27.9 26.2879 27.4286C26.2879 24.1125 28.9719 21.4286 32.2879 21.4286C32.7594 21.4286 33.1451 21.8143 33.1451 22.2857C33.1451 22.7571 32.7594 23.1429 32.2879 23.1429C29.9201 23.1429 28.0022 25.0607 28.0022 27.4286Z" fill="#FCFCFC"/>
+</g>
+<defs>
+<filter id="filter0_i_2310_20208" x="9.14062" y="9.14307" width="45.7109" height="48.0001" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="2.28571"/>
+<feGaussianBlur stdDeviation="2.28571"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_2310_20208"/>
+</filter>
+<clipPath id="clip0_2310_20208">
+<rect width="20.5714" height="27.4286" fill="white" transform="translate(22 18)"/>
+</clipPath>
+</defs>
+</svg>

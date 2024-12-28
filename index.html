@@ -27,6 +27,9 @@
     <!-- Swiper Slider CSS File -->
     <link rel="stylesheet" href="assets/css/swiper.min.css" />
 
+    <!-- AOS - Animation On Scroll CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Custom CSS Files -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
@@ -45,7 +48,7 @@
         <div class="container">
           <header class="header-container">
             <!-- Logo -->
-            <a href="/" class="logo">
+            <a href="index.html" class="logo">
               <img
                 src="assets/media/images/svg-icons/folivora-energy-logo.svg"
                 alt="#" />
@@ -69,19 +72,19 @@
                       <ul>
                         <!--  -->
                         <li>
-                          <a href="/services.html?service=1">
+                          <a href="services.html?service=1">
                             <span>Service Sub Menu #1</span>
                           </a>
                         </li>
                         <!--  -->
                         <li>
-                          <a href="/services.html?service=2">
+                          <a href="services.html?service=2">
                             <span>Service Sub Menu #2</span>
                           </a>
                         </li>
                         <!--  -->
                         <li>
-                          <a href="/services.html?service=3">
+                          <a href="services.html?service=3">
                             <span>Service Sub Menu #3</span>
                           </a>
                         </li>
@@ -104,19 +107,19 @@
                       <ul>
                         <!--  -->
                         <li>
-                          <a href="/products.html?product=1">
+                          <a href="products.html?product=1">
                             <span>Product Sub Menu #1</span>
                           </a>
                         </li>
                         <!--  -->
                         <li>
-                          <a href="/products.html?product=2">
+                          <a href="products.html?product=2">
                             <span>Product Sub Menu #2</span>
                           </a>
                         </li>
                         <!--  -->
                         <li>
-                          <a href="/products.html?product=3">
+                          <a href="products.html?product=3">
                             <span>Product Sub Menu #3</span>
                           </a>
                         </li>
@@ -243,22 +246,12 @@
     <section class="hero-section">
       <!-- BG Image/Video -->
       <div class="hero__bg">
-        <picture>
-          <!-- Mobile image for screens smaller than 600px -->
-          <source
-            media="(max-width: 600px)"
-            srcset="assets/media/images/hero-bgs/home-hero-bg-mobile.png" />
-
-          <!-- Desktop image for larger screens -->
-          <source
-            media="(min-width: 601px)"
-            srcset="assets/media/images/hero-bgs/home-hero-bg-desktop.png" />
-
-          <!-- Fallback image for browsers that do not support <picture> -->
-          <img
-            src="assets/media/images/hero-bgs/home-hero-bg-desktop.png"
-            alt="Responsive hero image" />
-        </picture>
+        <!-- Bg video -->
+        <video
+          src="assets/media/videos/wind-energy-video.mp4"
+          autoplay
+          muted
+          loop></video>
       </div>
 
       <!-- Content -->
@@ -325,7 +318,7 @@
             <div class="info-box">
               <div class="icon-image">
                 <img
-                  src="/assets/media/images/svg-icons/check-mark-icon.svg"
+                  src="assets/media/images/svg-icons/check-mark-icon.svg"
                   alt="#" />
               </div>
               <h4>Engineering expertise</h4>
@@ -339,7 +332,7 @@
             <div class="info-box">
               <div class="icon-image">
                 <img
-                  src="/assets/media/images/svg-icons/stats-icon.svg"
+                  src="assets/media/images/svg-icons/stats-icon.svg"
                   alt="#" />
               </div>
               <h4>Tailored Solutions</h4>
@@ -352,7 +345,7 @@
             <div class="info-box">
               <div class="icon-image">
                 <img
-                  src="/assets/media/images/svg-icons/energy-icon.svg"
+                  src="assets/media/images/svg-icons/energy-icon.svg"
                   alt="#" />
               </div>
               <h4>Holistic Approach</h4>
@@ -365,7 +358,7 @@
             <div class="info-box">
               <div class="icon-image">
                 <img
-                  src="/assets/media/images/svg-icons/heart-icon.svg"
+                  src="assets/media/images/svg-icons/heart-icon.svg"
                   alt="#" />
               </div>
               <h4>Sector knowledge</h4>
@@ -436,7 +429,11 @@
 
     <!-- START :: DIVIDER -->
     <div class="container">
-      <div class="divider-line"></div>
+      <div
+        class="divider-line"
+        data-aos="zoom"
+        data-aos-delay="600"
+        data-aos-duration="500"></div>
     </div>
     <!-- END :: DIVIDER -->
 
@@ -453,8 +450,8 @@
         <div class="products-industry-container">
           <!-- Industry Content  -->
           <div class="indus-product-head title-btn-text-layout">
-            <h1>Our Product</h1>
-            <a href="#" class="btn btn-light">Explore Our Products</a>
+            <h1>For whom we do it </h1>
+            <a href="#" class="btn btn-light">Clients and Case Studies</a>
             <p>
               Our products feature specialized Logic Blocks with customized OS
               for unique sectors.
@@ -481,7 +478,7 @@
             </div>
             <!-- Card No 3 -->
             <div class="card">
-              <h2>Infrastructure</h2>
+              <h2>Infrastructure plus datacenters</h2>
               <p class="text-small">
                 Energy solutions for hospitals, municipalities, and government
                 bodies to enhance sustainability and operational savings.
@@ -528,9 +525,7 @@
                 <div class="industry-links">
                   <a class="btn btn-secondary">Get in touch</a>
 
-                  <a href="#" class="solution-link">
-                    Find out more about Solutions
-                  </a>
+                  <a href="#" class="solution-link"> Our solutions </a>
                 </div>
               </div>
             </div>
@@ -612,10 +607,13 @@
 
                 <!-- About Description -->
                 <div class="industry-links">
-                  <a class="btn btn-secondary">Get in touch</a>
+                  <a class="btn btn-secondary">Gooooooooooooooooooooooo</a>
 
-                  <a href="#" class="solution-link">
-                    Find out more about Solutions
+                  <a
+                    href="#"
+                    class="solution-link"
+                    style="background-color: red">
+                    Our Solution
                   </a>
                 </div>
               </div>
@@ -1100,7 +1098,7 @@
           <nav class="folivora-links">
             <ul>
               <li>
-                <a href="/">Home</a>
+                <a href="">Home</a>
               </li>
               <li>
                 <a href="services.html">Services</a>
@@ -1142,6 +1140,13 @@
 
   <!-- Swiper JS File -->
   <script src="assets/js/swiper.min.js"></script>
+
+  <!-- AOS - Animation On Scroll CDN -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 
   <!-- Universal JS File -->
   <script src="assets/js/script.js"></script>

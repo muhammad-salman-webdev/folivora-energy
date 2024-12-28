@@ -87,6 +87,14 @@
         }
     }
 
+    .partner-slider-section {
+        & .partner-swiper {
+            .partner-logo {
+                width: 120px;
+            }
+        }
+    }
+
     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     /*     START :: Folivora Footer Container 3 */
     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

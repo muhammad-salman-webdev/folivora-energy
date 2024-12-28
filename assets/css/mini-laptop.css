@@ -6,6 +6,14 @@
         font-size: 30px;
     }
 
+    .hero-section {
+        & .hero__bg {
+            &::before {
+                background: linear-gradient(to bottom, #ffffff 0 43%, #00000000 61% 100%);
+            }
+        }
+    }
+
     .content-video-section {
         .text-video-row {
             flex-direction: column-reverse;
