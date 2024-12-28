@@ -335,6 +335,7 @@
         &::before {
             content: '';
             background: linear-gradient(to right, #ffffff 0 45%, #00000000 60% 100%);
+            background: linear-gradient(to right, #ffffff 0 46%, #00000000 70% 100%);
             position: absolute;
             inset: 0;
         }
@@ -511,6 +512,14 @@
 /* ------------------------------ */
 /* START :: Industry  Container 5 */
 /* ------------------------------ */
+.products-industry-section {
+    padding: 50px 0 125px;
+    background-image: url(../media/images/industry-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
 .products-industry-container {
     .industry-content {
         .industry-head {
@@ -534,7 +543,7 @@
         background-color: white;
         padding: 24px 16px;
         /* box-shadow: 0 0 0 2px #F3F4F6; */
-        border: 2px solid #e7eeea;
+        /* border: 2px solid #e7eeea; */
         cursor: pointer;
         position: relative;
         display: flex;
@@ -1072,7 +1081,7 @@
 
 .folivora-services-bg {
     padding: 50px 0 125px;
-    background-image: url(../media/images//folivora-services-bg.png);
+    background-image: url(../media/images/folivora-services-bg.png);
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
