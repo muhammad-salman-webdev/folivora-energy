@@ -218,9 +218,10 @@
             display: none;
         }
     }
-}
 
-/* Folivora Features Container  */
-.features-boxes {
-    grid-template-columns: repeat(2, 1fr);
+    .slothe-boxes {
+        .info-box {
+            width: 100% !important;
+        }
+    }
 }

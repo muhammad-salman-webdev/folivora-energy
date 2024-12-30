@@ -27,6 +27,9 @@
     <!-- Swiper Slider CSS File -->
     <link rel="stylesheet" href="assets/css/swiper.min.css" />
 
+    <!-- AOS - Animation On Scroll CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Custom CSS Files -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
@@ -365,7 +368,11 @@
 
     <!-- START :: DIVIDER -->
     <div class="container">
-      <div class="divider-line"></div>
+      <div
+        class="divider-line"
+        data-aos="zoom"
+        data-aos-duration="500"
+        data-aos-delay="100"></div>
     </div>
     <!-- END :: DIVIDER -->
 
@@ -409,7 +416,11 @@
 
     <!-- START :: DIVIDER -->
     <div class="container">
-      <div class="divider-line"></div>
+      <div
+        class="divider-line"
+        data-aos="zoom"
+        data-aos-duration="500"
+        data-aos-delay="100"></div>
     </div>
     <!-- END :: DIVIDER -->
 
@@ -424,77 +435,77 @@
     <section class="publication-section">
       <div class="container">
         <div class="publication-container">
-          <div class="public-head">
-            <h1>publication</h1>
-            <i class="fa-solid fa-chevron-up"></i>
+          <div class="public-head" id="publicationsCardsToggleButton">
+            <h1>
+              <span> Publication </span>
+              <i class="fa-solid fa-chevron-up"></i>
+            </h1>
+            <p>
+              Read our publications and discover the physics and mathematics
+              behind our solutions.
+            </p>
           </div>
 
-          <p
-            >Read our publications and discover the physics and mathematics
-            behind our solutions.</p
-          >
+          <div class="publication-cards-container" id="publicationsCards">
+            <div class="article-cards">
+              <!-- Article Card # 1  -->
+              <div class="article-card">
+                <a href="#">
+                  <h2>
+                    Optimal component sizing and operational optimization of a
+                    mobile energy system for decentralized electricity supply
+                  </h2>
+                </a>
+                <p>
+                  <strong>
+                    Roth, Maximilian; Franke, George; Rinderknecht, Stephan
+                  </strong>
+                </p>
 
-          <div class="article-cards">
-            <!-- Article Card # 1  -->
-            <div class="article-card">
-              <a href="#">
-                <h2
-                  >Optimal component sizing and operational optimization of a
-                  mobile energy system for decentralized electricity supply</h2
-                >
-              </a>
-              <p
-                ><strong
-                  >Roth, Maximilian; Franke, George; Rinderknecht,
-                  Stephan</strong
-                ></p
-              >
-
-              <div class="article-btn">
-                <span>In: Smart Energy, 11, Elsevier, ISSN 2666-9552</span>
-                <a class="link">DOI | Official URL</a>
+                <div class="article-btn">
+                  <span>In: Smart Energy, 11, Elsevier, ISSN 2666-9552</span>
+                  <a class="btn btn-light">DOI | Official URL</a>
+                </div>
               </div>
-            </div>
 
-            <!-- Article Card # 2  -->
-            <div class="article-card">
-              <a href="#">
-                <h2
-                  >Decentralized multi-grid coupling for energy supply of a
-                  hybrid bus depot using mixed-integer linear programming</h2
-                >
-              </a>
-              <p
-                ><strong
-                  >Roth, Maximilian; Franke, George; Rinderknecht,
-                  Stephan</strong
-                ></p
-              >
+              <!-- Article Card # 2  -->
+              <div class="article-card">
+                <a href="#">
+                  <h2>
+                    Decentralized multi-grid coupling for energy supply of a
+                    hybrid bus depot using mixed-integer linear programming
+                  </h2>
+                </a>
+                <p>
+                  <strong>
+                    Roth, Maximilian; Franke, George; Rinderknecht, Stephan
+                  </strong>
+                </p>
 
-              <div class="article-btn">
-                <span>In: Smart Energy, 11, Elsevier, ISSN 2666-9552</span>
-                <a class="link">DOI | Official URL</a>
+                <div class="article-btn">
+                  <span>In: Smart Energy, 11, Elsevier, ISSN 2666-9552</span>
+                  <a class="btn btn-light">DOI | Official URL</a>
+                </div>
               </div>
-            </div>
 
-            <!-- Article Card # 1  -->
-            <div class="article-card">
-              <a href="#">
-                <h2
-                  >Optimal component sizing and operational optimization of a
-                  mobile energy system for decentralized electricity supply</h2
-                >
-              </a>
-              <p
-                ><strong
-                  >Roth, Maximilian; Franke, George; Rinderknecht,
-                  Stephan</strong
-                ></p
-              >
+              <!-- Article Card # 1  -->
+              <div class="article-card">
+                <a href="#">
+                  <h2>
+                    Optimal component sizing and operational optimization of a
+                    mobile energy system for decentralized electricity supply
+                  </h2>
+                </a>
+                <p>
+                  <strong>
+                    Roth, Maximilian; Franke, George; Rinderknecht, Stephan
+                  </strong>
+                </p>
 
-              <div class="article-btn">
-                <span>In: Smart Energy, 11, Elsevier, ISSN 2666-9552</span>
-                <a class="link">DOI | Official URL</a>
+                <div class="article-btn">
+                  <span>In: Smart Energy, 11, Elsevier, ISSN 2666-9552</span>
+                  <a class="btn btn-light">DOI | Official URL</a>
+                </div>
               </div>
             </div>
           </div>
@@ -511,7 +522,11 @@
 
     <!-- START :: DIVIDER -->
     <div class="container">
-      <div class="divider-line"></div>
+      <div
+        class="divider-line"
+        data-aos="zoom"
+        data-aos-duration="500"
+        data-aos-delay="100"></div>
     </div>
     <!-- END :: DIVIDER -->
 
@@ -528,7 +543,7 @@
                 <img src="assets/media/images/georg.png" alt="#" />
               </div>
 
-              <div>
+              <div class="founder-links">
                 <a href="#">Georg Avemarie </a>
                 <a href="#">linkedIn</a>
               </div>
@@ -541,7 +556,7 @@
                 <img src="assets/media/images/maximilian.png" alt="#" />
               </div>
 
-              <div>
+              <div class="founder-links">
                 <a href="#">Maximilian M.Roth</a>
 
                 <a href="#">linkedIn</a>
@@ -557,7 +572,11 @@
 
     <!-- START :: DIVIDER -->
     <div class="container">
-      <div class="divider-line"></div>
+      <div
+        class="divider-line"
+        data-aos="zoom"
+        data-aos-duration="500"
+        data-aos-delay="100"></div>
     </div>
     <!-- END :: DIVIDER -->
 
@@ -596,7 +615,11 @@
 
     <!-- START :: DIVIDER -->
     <div class="container">
-      <div class="divider-line"></div>
+      <div
+        class="divider-line"
+        data-aos="zoom"
+        data-aos-duration="500"
+        data-aos-delay="100"></div>
     </div>
     <!-- END :: DIVIDER -->
 
@@ -687,10 +710,25 @@
     <!-- ------------------------------- -->
     <!-- END  :: folivora Footer Section -->
     <!-- ------------------------------- -->
+
+    <!-- Publications Toggle Button Funcationality -->
+    <script>
+      const pubsToggleBtn = document.getElementById(
+          "publicationsCardsToggleButton"
+        ),
+        publicationsCards = document.getElementById("publicationsCards");
+      pubsToggleBtn.addEventListener("click", () => {
+        pubsToggleBtn.classList.toggle("_hide");
+        publicationsCards.classList.toggle("_hide");
+      });
+    </script>
   </body>
 
   <!-- Swiper JS File -->
   <script src="assets/js/swiper.min.js"></script>
+
+  <!-- AOS - Animation On Scroll CDN -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <!-- Universal JS File -->
   <script src="assets/js/script.js"></script>

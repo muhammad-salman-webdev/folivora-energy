@@ -27,6 +27,9 @@
     <!-- Swiper Slider CSS File -->
     <link rel="stylesheet" href="assets/css/swiper.min.css" />
 
+    <!-- AOS - Animation On Scroll CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Custom CSS Files -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
@@ -290,16 +293,6 @@
     <!-- ################################# -->
     <!-- ################################# -->
 
-    <!-- START :: DIVIDER -->
-    <div class="container">
-      <div class="divider-line"></div>
-    </div>
-    <!-- END :: DIVIDER -->
-
-    <!-- ################################# -->
-    <!-- ################################# -->
-    <!-- ################################# -->
-
     <!-- ----------------------------------->
     <!-- START :: Folivora Intro Section 3-->
     <!-- ----------------------------------->
@@ -378,7 +371,11 @@
 
     <!-- START :: DIVIDER -->
     <div class="container">
-      <div class="divider-line"></div>
+      <div
+        class="divider-line"
+        data-aos="zoom"
+        data-aos-duration="500"
+        data-aos-delay="100"></div>
     </div>
     <!-- END :: DIVIDER -->
 
@@ -558,221 +555,369 @@
 
     <!-- START :: DIVIDER -->
     <div class="container">
-      <div class="divider-line"></div>
+      <div
+        class="divider-line"
+        data-aos="zoom"
+        data-aos-duration="500"
+        data-aos-delay="100"></div>
     </div>
     <!-- END :: DIVIDER -->
 
-    <!-- ################################# -->
-    <!-- ################################# -->
-    <!-- ################################# -->
+    <div class="features-cards-container-main">
+      <!-- ################################# -->
+      <!-- ################################# -->
+      <!-- ################################# -->
 
-    <!-- ----------------------------------->
-    <!-- START :: Folivora Intro Section 3-->
-    <!-- ----------------------------------->
+      <!-- ----------------------------------->
+      <!-- START :: Folivora Intro Section 3-->
+      <!-- ----------------------------------->
 
-    <section class="folivora-features-section">
-      <div class="container">
-        <div class="folivora-features-container">
-          <!-- Titles & Text -->
-          <div class="titles">
-            <h1> Features of the SlothbrAIn software library</h1>
+      <section class="folivora-features-section folivora-sticky-anim-section">
+        <div class="container">
+          <div class="folivora-features-container">
+            <!-- Titles & Text -->
+            <div class="titles">
+              <h1> Features of the SlothbrAIn software library</h1>
+              <p>
+                <strong
+                  >We build tailored operating systems by selecting the perfect
+                  software components from our library and customizing them to
+                  solve the unique challenges of our clients.</strong
+                >
+              </p>
+              <p>
+                Our software library includes a wide range of physical and
+                mathematical models for energy systems, technical facilities,
+                and processes.
+              </p>
+            </div>
+
+            <!-- Info Boxes -->
+            <div class="features-boxes">
+              <!-- Box -->
+              <div class="features-box">
+                <div class="features-box-head">
+                  <div class="icon-image">
+                    <img
+                      src="assets/media/images/svg-icons/bulb-icon.svg"
+                      alt="#" />
+                  </div>
+                  <h4>Gorecasting algorithms</h4>
+                </div>
+                <p class="text-tiny">
+                  Extensive engineering expertise in mechanical engineering,
+                  control and process engineering, electrical engineering,
+                  information technology and data science.
+                </p>
+              </div>
+              <!-- Box -->
+              <div class="features-box">
+                <div class="features-box-head">
+                  <div class="icon-image">
+                    <img
+                      src="assets/media/images/svg-icons/result-icon.svg"
+                      alt="#" />
+                  </div>
+                  <h4>Optimization algorithms</h4>
+                </div>
+                <p class="text-tiny">
+                  We adapt 100% to the customer's problems and build the most
+                  efficient solution for their application.
+                </p>
+              </div>
+              <!-- Box -->
+              <div class="features-box">
+                <div class="features-box-head">
+                  <div class="icon-image">
+                    <img
+                      src="assets/media/images/svg-icons/chip-icon.svg"
+                      alt="#" />
+                  </div>
+                  <h4>Communication architecture</h4>
+                </div>
+                <p class="text-tiny">
+                  We combine consulting services with in-house products to
+                  create a tailor-made customer solution.
+                </p>
+              </div>
+              <!-- Box -->
+              <div class="features-box">
+                <div class="features-box-head">
+                  <div class="icon-image">
+                    <img
+                      src="assets/media/images/svg-icons/scale-icon.svg"
+                      alt="#" />
+                  </div>
+                  <h4>Data management architecture</h4>
+                </div>
+                <p class="text-tiny">
+                  We have experience in the real estate, manufacturing industry
+                  and infrastructure sector and can therefore leverage valuable
+                  synergies.
+                </p>
+              </div>
+              <!-- Box -->
+              <div class="features-box">
+                <div class="features-box-head">
+                  <div class="icon-image">
+                    <img
+                      src="assets/media/images/svg-icons/calendar.svg"
+                      alt="#" />
+                  </div>
+                  <h4>Dashboards and interfaces</h4>
+                </div>
+                <p class="text-tiny">
+                  We have experience in the real estate, manufacturing industry
+                  and infrastructure sector and can therefore leverage valuable
+                  synergies.
+                </p>
+              </div>
+              <!-- Box -->
+              <div class="features-box">
+                <div class="features-box-head">
+                  <div class="icon-image">
+                    <img
+                      src="assets/media/images/svg-icons/setting-icon.svg"
+                      alt="#" />
+                  </div>
+                  <h4>Virtual system simulation models</h4>
+                </div>
+                <p class="text-tiny">
+                  We have experience in the real estate, manufacturing industry
+                  and infrastructure sector and can therefore leverage valuable
+                  synergies.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------------------------------->
+      <!-- END :: Folivora Intro Section 3 -->
+      <!-- ---------------------------------->
+
+      <!-- ################################# -->
+      <!-- ################################# -->
+      <!-- ################################# -->
+      <!------------------------------------------>
+      <!--START :: Folivora Oprating Section ----->
+      <!------------------------------------------>
+
+      <section
+        class="products-industry-section folivora-sticky-anim-section features-tab-section"
+        data-change-industry-tabs>
+        <div class="container">
+          <div class="products-industry-container">
+            <h1>Operating System</h1>
+            <p>
+              Our portfolio includes both fully customized operating systems,
+              built from modular and flexible software features, and
+              pre-configured operating systems tailored to the specific needs of
+              various sectors.</p
+            >
             <p>
               <strong
-                >We build tailored operating systems by selecting the perfect
-                software components from our library and customizing them to
-                solve the unique challenges of our clients.</strong
-              >
+                >This way, our clients get the perfect balance of individuality
+                and efficiency precisely aligned with their objectives.
+              </strong>
+            </p>
+
+            <!-- Industry Card  -->
+            <div class="industry-cards">
+              <!-- Card No 1 -->
+              <div class="card active">
+                <h2>eOS</h2>
+                <p class="text-small">Efficiency operating system</p>
+              </div>
+
+              <!-- Card No 2 -->
+              <div class="card">
+                <h2>reOS</h2>
+                <p class="text-small">Real estates operating system</p>
+              </div>
+              <!-- Card No 3 -->
+              <div class="card">
+                <h2>infraOS</h2>
+                <p class="text-small">Infrastructure operating system</p>
+              </div>
+
+              <!-- Card No 4 -->
+              <div class="card">
+                <h2>inOS</h2>
+                <p class="text-small">Industry operating system</p>
+              </div>
+            </div>
+
+            <!-- Description Boxes -->
+            <div class="industry-cards-desc-container operating-cards">
+              <!-- Industry Description  -->
+              <div class="industry-desc show anim">
+                <p>
+                  Optimize general efficiency for unique applications with our
+                  customized operating system solutions.
+                </p>
+
+                <div class="desc-items">
+                  <!-- About Description -->
+                  <div class="industry-links">
+                    <a href="#" class="solution-link">
+                      <h3> Find out more about Sectors We Serve </h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Industry Description  -->
+              <div class="industry-desc">
+                <p>
+                  Boost energy efficiency in energy-intensive production sites
+                  and industrial parks with our tailored operating system.
+                </p>
+
+                <div class="desc-items">
+                  <!-- About Description -->
+                  <div class="industry-links">
+                    <a href="#" class="solution-link">
+                      <h3> Find out more about Sectors We Serve </h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Industry Description  -->
+              <div class="industry-desc">
+                <p>
+                  Drive energy efficiency in neighborhoods, residential areas,
+                  offices, shopping centers, and mixed-use urban districts with
+                  our tailored operating system.
+                </p>
+
+                <div class="desc-items">
+                  <!-- About Description -->
+                  <div class="industry-links">
+                    <a href="#" class="solution-link">
+                      <h3> Find out more about Sectors We Serve </h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Industry Description  -->
+              <div class="industry-desc">
+                <p>
+                  Enhance energy efficiency in hospitals, data centers, and
+                  laboratories with our specialized operating system for
+                  critical infrastructure.
+                </p>
+
+                <div class="desc-items">
+                  <!-- About Description -->
+                  <div class="industry-links">
+                    <a href="#" class="solution-link">
+                      <h3> Find out more about Sectors We Serve </h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ################################# -->
+      <!-- ################################# -->
+      <!-- ################################# -->
+
+      <!-- Folivora Deployment Section  -->
+      <section class="deployment-section folivora-sticky-anim-section">
+        <div class="container">
+          <div class="deployment-container">
+            <h1>Deployment</h1>
+            <p>
+              <strong
+                >Flexible Integration of Operating Systems On-Site or in the
+                Cloud Operating systems can be integrated into physical systems
+                in a variety of ways, offering maximum flexibility.
+              </strong>
             </p>
             <p>
-              Our software library includes a wide range of physical and
-              mathematical models for energy systems, technical facilities, and
-              processes.
+              They can be deployed through one of our powerful logic blocks,
+              allowing the operating system to run locally on-site, or via a
+              secure internet interface, providing a pure cloud solution.
+              Whether on-site or in the cloud, our solutions are designed to
+              seamlessly integrate with existing infrastructure, delivering the
+              perfect balance of performance, scalability, and security. Clients
+              can choose the deployment option that best meets their
+              requirements.
             </p>
-          </div>
 
-          <!-- Info Boxes -->
-          <div class="features-boxes">
-            <!-- Box -->
-            <div class="features-box">
-              <div class="features-box-head">
-                <div class="icon-image">
+            <!-- Deployment Cards  -->
+            <div class="deployment-cards">
+              <!-- Deployment Image # 1 -->
+              <div class="deployment-card">
+                <div class="deploy-image">
                   <img
-                    src="assets/media/images/svg-icons/bulb-icon.svg"
+                    src="assets/media/images/deployment-image-1.png"
                     alt="#" />
                 </div>
-                <h4>Gorecasting algorithms</h4>
+
+                <strong>Real State Logic Block</strong>
               </div>
-              <p class="text-tiny">
-                Extensive engineering expertise in mechanical engineering,
-                control and process engineering, electrical engineering,
-                information technology and data science.
-              </p>
-            </div>
-            <!-- Box -->
-            <div class="features-box">
-              <div class="features-box-head">
-                <div class="icon-image">
+
+              <!-- Deployment Image # 2 -->
+              <div class="deployment-card">
+                <div class="deploy-image">
                   <img
-                    src="assets/media/images/svg-icons/result-icon.svg"
+                    src="assets/media/images/deployment-image-2.png"
                     alt="#" />
                 </div>
-                <h4>Optimization algorithms</h4>
+
+                <strong>Infrastructure Logic Block</strong>
               </div>
-              <p class="text-tiny">
-                We adapt 100% to the customer's problems and build the most
-                efficient solution for their application.
-              </p>
-            </div>
-            <!-- Box -->
-            <div class="features-box">
-              <div class="features-box-head">
-                <div class="icon-image">
+
+              <!-- Deployment Image # 3 -->
+              <div class="deployment-card">
+                <div class="deploy-image">
                   <img
-                    src="assets/media/images/svg-icons/chip-icon.svg"
+                    src="assets/media/images/deployment-image-3.png"
                     alt="#" />
                 </div>
-                <h4>Communication architecture</h4>
+
+                <strong>Industry Logic Block</strong>
               </div>
-              <p class="text-tiny">
-                We combine consulting services with in-house products to create
-                a tailor-made customer solution.
-              </p>
-            </div>
-            <!-- Box -->
-            <div class="features-box">
-              <div class="features-box-head">
-                <div class="icon-image">
+
+              <!-- Deployment Image # 4 -->
+              <div class="deployment-card">
+                <div class="deploy-image">
                   <img
-                    src="assets/media/images/svg-icons/scale-icon.svg"
+                    src="assets/media/images/deployment-image-4.png"
                     alt="#" />
                 </div>
-                <h4>Data management architecture</h4>
+
+                <strong>Cloud-Only </strong>
               </div>
-              <p class="text-tiny">
-                We have experience in the real estate, manufacturing industry
-                and infrastructure sector and can therefore leverage valuable
-                synergies.
-              </p>
-            </div>
-            <!-- Box -->
-            <div class="features-box">
-              <div class="features-box-head">
-                <div class="icon-image">
-                  <img
-                    src="assets/media/images/svg-icons/calendar.svg"
-                    alt="#" />
-                </div>
-                <h4>Dashboards and interfaces</h4>
-              </div>
-              <p class="text-tiny">
-                We have experience in the real estate, manufacturing industry
-                and infrastructure sector and can therefore leverage valuable
-                synergies.
-              </p>
-            </div>
-            <!-- Box -->
-            <div class="features-box">
-              <div class="features-box-head">
-                <div class="icon-image">
-                  <img
-                    src="assets/media/images/svg-icons/setting-icon.svg"
-                    alt="#" />
-                </div>
-                <h4>Virtual system simulation models</h4>
-              </div>
-              <p class="text-tiny">
-                We have experience in the real estate, manufacturing industry
-                and infrastructure sector and can therefore leverage valuable
-                synergies.
-              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ---------------------------------->
-    <!-- END :: Folivora Intro Section 3 -->
-    <!-- ---------------------------------->
-
-    <!-- ################################# -->
-    <!-- ################################# -->
-    <!-- ################################# -->
+      <!-- ################################# -->
+      <!-- ################################# -->
+      <!-- ################################# -->
+    </div>
 
     <!-- START :: DIVIDER -->
     <div class="container">
-      <div class="divider-line"></div>
+      <div
+        class="divider-line"
+        data-aos="zoom"
+        data-aos-duration="500"
+        data-aos-delay="100"></div>
     </div>
     <!-- END :: DIVIDER -->
 
     <!-- ################################# -->
     <!-- ################################# -->
     <!-- ################################# -->
-    <!------------------------------------------>
-    <!--START :: Folivora Oprating Section ----->
-    <!------------------------------------------>
-    <section class="operating-section">
-      <div class="container">
-        <div class="operating-container">
-          <h1>Operating System</h1>
-          <p>
-            Our portfolio includes both fully customized operating systems,
-            built from modular and flexible software features, and
-            pre-configured operating systems tailored to the specific needs of
-            various sectors.</p
-          >
-          <p>
-            <strong
-              >This way, our clients get the perfect balance of individuality
-              and efficiency precisely aligned with their objectives.
-            </strong>
-          </p>
 
-          <!-- Operating Boxes  -->
-          <div class="operating-boxes">
-            <div class="operating-box">
-              <h2>eOS</h2>
-              <p class="text-small">Efficiency operating system</p>
-            </div>
-            <div class="operating-box">
-              <h2>reOS</h2>
-              <p class="text-small">Real estates operating system</p>
-            </div>
-            <div class="operating-box">
-              <h2>infraOS</h2>
-              <p class="text-small">Infrastructure operating system</p>
-            </div>
-            <div class="operating-box">
-              <h2>inOS</h2>
-              <p class="text-small">Industry operating system</p>
-            </div>
-          </div>
-
-          <!-- Operating Desc  -->
-          <div class="operating-desc">
-            <p class="text-small"
-              >Optimize general efficiency for unique applications with our
-              customized operating system solutions.</p
-            >
-            <span>Find out more about Sectors We Serve</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ################################# -->
-    <!-- ################################# -->
-    <!-- ################################# -->
-
-    <!-- START :: DIVIDER -->
-    <div class="container">
-      <div class="divider-line"></div>
-    </div>
-    <!-- END :: DIVIDER -->
-
-    <!-- ################################# -->
-    <!-- ################################# -->
-    <!-- ################################# -->
     <!-- ----------------------------------- -->
     <!--  START :: folivora Form Section 10 -->
     <!-- ----------------------------------- -->
@@ -860,6 +1005,9 @@
 
   <!-- Swiper JS File -->
   <script src="assets/js/swiper.min.js"></script>
+
+  <!-- AOS - Animation On Scroll CDN -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <!-- Universal JS File -->
   <script src="assets/js/script.js"></script>

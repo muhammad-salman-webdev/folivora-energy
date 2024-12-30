@@ -27,6 +27,9 @@
     <!-- Swiper Slider CSS File -->
     <link rel="stylesheet" href="assets/css/swiper.min.css" />
 
+    <!-- AOS - Animation On Scroll CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Custom CSS Files -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
@@ -245,9 +248,10 @@
       <div class="hero__bg">
         <img
           src="assets/media/images/hero-bgs/client-hero-bg.jpg"
+          style="object-position: left"
           srcset="
-            assets/media/images/hero-bgs/services-hero-bg-mobile.png  600w,
-            assets/media/images/hero-bgs/services-hero-bg-mobile.png 2000w
+            assets/media/images/hero-bgs/services-hero-bg-mobile.png   600w,
+            assets/media/images/hero-bgs/services-hero-bg-desktop.png 2000w
           "
           sizes="(max-width: 600px) 100vw, 100vw"
           alt="Responsive hero image" />
@@ -358,7 +362,11 @@
 
     <!-- START :: DIVIDER -->
     <div class="container">
-      <div class="divider-line"></div>
+      <div
+        class="divider-line"
+        data-aos="zoom"
+        data-aos-duration="500"
+        data-aos-delay="100"></div>
     </div>
     <!-- END :: DIVIDER -->
 
@@ -433,7 +441,11 @@
 
     <!-- START :: DIVIDER -->
     <div class="container">
-      <div class="divider-line"></div>
+      <div
+        class="divider-line"
+        data-aos="zoom"
+        data-aos-duration="500"
+        data-aos-delay="100"></div>
     </div>
     <!-- END :: DIVIDER -->
 
@@ -511,7 +523,11 @@
 
     <!-- START :: DIVIDER -->
     <div class="container">
-      <div class="divider-line"></div>
+      <div
+        class="divider-line"
+        data-aos="zoom"
+        data-aos-duration="500"
+        data-aos-delay="100"></div>
     </div>
     <!-- END :: DIVIDER -->
 
@@ -820,7 +836,11 @@
 
     <!-- START :: DIVIDER -->
     <div class="container">
-      <div class="divider-line"></div>
+      <div
+        class="divider-line"
+        data-aos="zoom"
+        data-aos-duration="500"
+        data-aos-delay="100"></div>
     </div>
     <!-- END :: DIVIDER -->
     <!-- ################################# -->
@@ -862,7 +882,11 @@
 
     <!-- START :: DIVIDER -->
     <div class="container">
-      <div class="divider-line"></div>
+      <div
+        class="divider-line"
+        data-aos="zoom"
+        data-aos-duration="500"
+        data-aos-delay="100"></div>
     </div>
     <!-- END :: DIVIDER -->
 
@@ -957,6 +981,9 @@
 
   <!-- Swiper JS File -->
   <script src="assets/js/swiper.min.js"></script>
+
+  <!-- AOS - Animation On Scroll CDN -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <!-- Universal JS File -->
   <script src="assets/js/script.js"></script>

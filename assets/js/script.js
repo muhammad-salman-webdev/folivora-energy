@@ -1,3 +1,7 @@
+AOS.init({
+  once: true, // Animation will only happen once
+});
+
 // Selecting all industry tab buttons and corresponding tab content descriptions
 const industryTabsBtns = document.querySelectorAll(
   "section.products-industry-section[data-change-industry-tabs] .products-industry-container > .industry-cards > .card"
