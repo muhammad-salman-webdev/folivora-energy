@@ -216,4 +216,20 @@
     .deployment-cards {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .publication-container {
+        & .article-cards {
+            padding: 0 20px;
+            gap: 30px;
+
+            & .article-card {
+                padding: 24px;
+
+                .article-btn {
+                    flex-direction: column;
+                    gap: 10px;
+                }
+            }
+        }
+    }
 }

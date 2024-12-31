@@ -1,216 +1,97 @@
+// Initializing AOS (Animate On Scroll Library) with default settings
 AOS.init({
-  once: true, // Animation will only happen once
+  once: true, // Ensures animations happen only once
 });
 
-// Selecting all industry tab buttons and corresponding tab content descriptions
-const industryTabsBtns = document.querySelectorAll(
-  "section.products-industry-section[data-change-industry-tabs] .products-industry-container > .industry-cards > .card"
-);
-const industryTabs = document.querySelectorAll(
-  "section.products-industry-section[data-change-industry-tabs] .products-industry-container > .industry-cards-desc-container > .industry-desc"
-);
-
-// Adding click event listeners to each industry tab button
-industryTabsBtns.forEach((tabBtn, index) => {
-  tabBtn.addEventListener("click", () => {
-    // Loop through all buttons and tabs to toggle active and show states
-    industryTabsBtns.forEach((_tabBtn, _index) => {
-      const tab = industryTabs[_index];
-      if (index === _index) {
-        // Activate the clicked button and show the corresponding tab
-        _tabBtn.classList.add("active");
-        tab.classList.add("show");
-
-        // Adding animation after a short delay for smooth transition
-        setTimeout(() => {
-          tab.classList.add("anim");
-        }, 10);
-      } else {
-        // Deactivate other buttons and hide their corresponding tabs
-        _tabBtn.classList.remove("active");
-        tab.classList.remove("anim");
-        setTimeout(() => {
-          tab.classList.remove("show");
-        }, 500); // Delay ensures animations are completed before hiding
-      }
-    });
-  });
-});
-
-// #############################################################
-// #############################################################
-// #############################################################
-// #############################################################
-// #############################################################
-// #############################################################
-
-// Initializing Swiper.js for the partner section
-const swiper = new Swiper(".partner-swiper[data-partner-swiper]", {
-  // Configuring Swiper with 6 visible slides and enabling infinite loop
-  slidesPerView: 6,
-  loop: true,
-  speed: 3000, // Adjust speed to suit your needs
-  autoplay: {
-    delay: 1, // Set a non-zero delay for autoplay
-    disableOnInteraction: false, // Keep autoplay even if user interacts
-  },
-  breakpoints: {
-    1280: {
-      slidesPerView: 6,
-    },
-    1024: {
-      slidesPerView: 5,
-    },
-    840: {
-      slidesPerView: 4,
-    },
-    468: {
-      slidesPerView: 3,
-    },
-    310: {
-      slidesPerView: 2,
-    },
-    0: {
-      slidesPerView: 1,
-    },
-  },
-});
-
-// #############################################################
-// #############################################################
-// #############################################################
-// #############################################################
-// #############################################################
-// #############################################################
-
-// Managing submenu toggling for navigation items with submenus
-const navMenus = document.querySelectorAll(
-  "#header-nav-main > li:has(.submenu)"
-);
-navMenus.forEach((navMenu, index) => {
-  const triger = navMenu.querySelector(".submenu-triger");
-
-  triger.addEventListener("click", () => {
-    // Close all other open submenus while toggling the clicked submenu
-    navMenus.forEach((_navMenu, _index) => {
-      if (index === _index) {
-        // Toggle active state for the clicked menu
-        _navMenu.classList.toggle("active");
-      } else {
-        // Remove active state from other menus
-        _navMenu.classList.remove("active");
-      }
-    });
-  });
-});
-
-// #############################################################
-// #############################################################
-// #############################################################
-// #############################################################
-// #############################################################
-// #############################################################
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 // Handling responsive menu toggle functionality
-const navElem = document.querySelector(
+const navbarContainer = document.querySelector(
   ".navbar-container[data-navbar-container]"
 );
-const respMenuBtn = document.querySelector(
+const responsiveMenuToggle = document.querySelector(
   ".resp-menu-toggle-btn input[type='checkbox']"
 );
-const navBox = navElem.querySelector("nav");
+const navigationBox = navbarContainer.querySelector("nav");
 
-respMenuBtn.addEventListener("change", () => {
-  // Prevent body scrolling when the menu is active
-  // document.body.classList.toggle("paused");
-
-  if (navElem.classList.contains("show")) {
+// Toggle menu visibility and animations on menu button state change
+responsiveMenuToggle.addEventListener("change", () => {
+  if (navbarContainer.classList.contains("show")) {
     // Close the menu with animations
-    navElem.classList.remove("anim");
+    navbarContainer.classList.remove("anim");
 
     setTimeout(() => {
-      navElem.classList.remove("show");
-      navBox.classList.remove("anim");
-    }, 300); // Delay ensures animations are completed before hiding
+      navbarContainer.classList.remove("show");
+      navigationBox.classList.remove("anim");
+    }, 300); // Ensure animations complete before hiding
   } else {
     // Open the menu with animations
-    navElem.classList.add("show");
+    navbarContainer.classList.add("show");
 
     setTimeout(() => {
-      navElem.classList.add("anim");
-      navBox.classList.add("anim");
-    }, 10); // Small delay for initiating animation smoothly
+      navbarContainer.classList.add("anim");
+      navigationBox.classList.add("anim");
+    }, 10); // Delay for smoother animation initialization
   }
 });
 
-navElem.addEventListener("click", (e) => {
-  if (e.target === navElem) {
-    respMenuBtn.checked = false;
+// Close the responsive menu when clicking outside the navigation area
+navbarContainer.addEventListener("click", (event) => {
+  if (event.target === navbarContainer) {
+    responsiveMenuToggle.checked = false;
+
     // Close the menu with animations
-    navElem.classList.remove("anim");
+    navbarContainer.classList.remove("anim");
 
     setTimeout(() => {
-      navElem.classList.remove("show");
-      navBox.classList.remove("anim");
-    }, 300); // Delay ensures animations are completed before hiding
+      navbarContainer.classList.remove("show");
+      navigationBox.classList.remove("anim");
+    }, 300); // Ensure animations complete before hiding
   }
 });
 
-// #############################################################
-// #############################################################
-// #############################################################
-// #############################################################
-// #############################################################
-// #############################################################
+// Managing submenu toggling for navigation items with submenus
+const navItemsWithSubmenus = document.querySelectorAll(
+  "#header-nav-main > li:has(.submenu)"
+);
 
-// Animating the header on scrolls
-const header = document.querySelector("section .header-section#header-global");
+navItemsWithSubmenus.forEach((navItem, currentIndex) => {
+  const submenuTrigger = navItem.querySelector(".submenu-triger");
+
+  submenuTrigger.addEventListener("click", () => {
+    // Close all other open submenus and toggle the clicked submenu
+    navItemsWithSubmenus.forEach((otherNavItem, otherIndex) => {
+      if (currentIndex === otherIndex) {
+        // Toggle active state for the clicked menu
+        otherNavItem.classList.toggle("active");
+      } else {
+        // Remove active state from other menus
+        otherNavItem.classList.remove("active");
+      }
+    });
+  });
+});
+
+// Animating the header on scroll
+const headerGlobal = document.querySelector(
+  "section .header-section#header-global"
+);
 
 window.addEventListener("scroll", () => {
-  const threshold = window.innerHeight * 0.5; // 50% of the viewport height
-  if (window.scrollY > threshold) {
-    // Add class to animate the header in
-    header.classList.add("show");
+  const scrollThreshold = window.innerHeight * 0.5; // 50% of the viewport height
+  if (window.scrollY > scrollThreshold) {
+    // Add classes to show and animate the header
+    headerGlobal.classList.add("show");
     setTimeout(() => {
-      header.classList.add("anim");
+      headerGlobal.classList.add("anim");
     }, 10);
   } else {
-    if (header.classList.contains("show")) {
-      // Remove class to hide the header
-      header.classList.remove("anim");
+    if (headerGlobal.classList.contains("show")) {
+      // Remove classes to hide and reset header animation
+      headerGlobal.classList.remove("anim");
       setTimeout(() => {
-        header.classList.remove("show");
+        headerGlobal.classList.remove("show");
       }, 400);
     }
   }
 });
-
-// #############################################################
-// #############################################################
-// #############################################################
-// #############################################################
-// #############################################################
-// #############################################################
-
-// Services Section Swiper
-const caseStudySwiper = new Swiper(
-  ".casestudy-swiper-main[data-services-casestudy-swiper] #casestudy-swiper",
-  {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    centeredSlides: true,
-    grabCursor: true,
-
-    pagination: {
-      el: ".caseStudy-swiper-pagination[data-pagination]",
-      clickable: true,
-    },
-  }
-);
-
-// #############################################################
-// #############################################################
-// #############################################################
-// #############################################################
-// #############################################################
-// #############################################################

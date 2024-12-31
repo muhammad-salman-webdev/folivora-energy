@@ -28,7 +28,7 @@
     }
 
     .text-small {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .font-medium {
@@ -95,6 +95,16 @@
         }
     }
 
+    .publication-container {
+        .public-head {
+            padding: 24px 30px;
+
+            &>p {
+                margin-top: 10px;
+            }
+        }
+    }
+
     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     /*     START :: Folivora Footer Container 3 */
     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -107,5 +117,14 @@
 @media (max-width:500px) {
     .features-boxes {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .case-study-head {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            order: 3;
+        }
     }
 }
