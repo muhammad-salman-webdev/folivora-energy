@@ -138,4 +138,9 @@
             margin-top: 20px;
         }
     }
+
+    .case-study-section>.container:first-child,
+    .casestudy-swiper-main {
+        display: none;
+    }
 }

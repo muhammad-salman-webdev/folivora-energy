@@ -1100,10 +1100,10 @@
         overflow: hidden;
         background-size: cover;
         background-repeat: no-repeat;
-        transform: scale(0.9);
+        transform: scale(0.94);
 
         &.swiper-slide-active {
-            transform: scale(1.1);
+            transform: scale(1);
         }
     }
 }
@@ -1112,7 +1112,7 @@
     margin: 0 auto;
     display: flex;
     max-width: max-content;
-    margin-top: 30px;
+    margin-top: 40px;
     gap: 8px;
 
     .swiper-pagination-bullet {
@@ -1527,5 +1527,30 @@
 
     .industry-cards-desc-container {
         margin: 40px 0 0 0
+    }
+}
+
+.casestudy-resp-section {
+    padding: 12px 0;
+    background: url('../media/images/casestudy-resp-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .caseStudy-resp-cards {
+        display: flex;
+        overflow: auto;
+        gap: 20px;
+        padding-bottom: 20px;
+        padding: 0 5% 30px;
+        max-width: 1240px;
+        margin: 30px 0 0;
+
+        .caseStudy-resp-card {
+            min-width: 300px;
+            background-color: white;
+            border-radius: 6px;
+            padding: 32px;
+        }
     }
 }
