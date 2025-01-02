@@ -111,6 +111,12 @@
     .footer-logo {
         width: 190px
     }
+
+    .industry-links {
+        flex-direction: column-reverse;
+        gap: 20px;
+        align-items: start;
+    }
 }
 
 /* Features Boxes  */
