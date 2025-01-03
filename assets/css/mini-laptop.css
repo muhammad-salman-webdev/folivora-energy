@@ -143,4 +143,8 @@
     .casestudy-swiper-main {
         display: none;
     }
+
+    .casestudy-resp-section {
+        display: block;
+    }
 }

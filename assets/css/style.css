@@ -385,7 +385,7 @@
 
             &::before {
                 content: "";
-                background-image: url(../media/images/Decore.png);
+                background-image: url(../media/images/Decore.webp);
                 background-size: 100%;
                 width: 130%;
                 height: 20px;
@@ -514,7 +514,7 @@
 /* ------------------------------ */
 .products-industry-section {
     padding: 0px 0 125px;
-    background-image: url(../media/images/industry-bg.png);
+    background-image: url(../media/images/industry-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -1079,7 +1079,7 @@
 
 .folivora-services-bg {
     padding: 50px 0 125px;
-    background-image: url(../media/images/folivora-services-bg.png);
+    background-image: url(../media/images/folivora-services-bg.webp);
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
@@ -1264,7 +1264,7 @@
 /* START :: Features Container  */
 /* ---------------------------- */
 .folivora-sticky-anim-section {
-    background-image: url(../media/images/featues-bg.png);
+    background-image: url(../media/images/featues-bg.webp);
     background-size: cover;
     position: relative;
     padding: 100px 0;
@@ -1538,10 +1538,11 @@
 
 .casestudy-resp-section {
     padding: 12px 0;
-    background: url('../media/images/casestudy-resp-bg.png');
+    background: url('../media/images/casestudy-resp-bg.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: none;
 
     .caseStudy-resp-cards {
         display: flex;
