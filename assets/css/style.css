@@ -193,6 +193,7 @@
                                 }
 
                                 a {
+                                    cursor: pointer;
                                     width: 100%;
                                     display: block;
                                     line-height: 30px;
@@ -520,6 +521,20 @@
 }
 
 .products-industry-container {
+
+    &>h1,
+    &>p {
+        text-align: center;
+    }
+
+    &>h1+p {
+        margin: 20px 0 10px;
+    }
+
+    .industry-cards {
+        margin-top: 60px;
+    }
+
     .industry-content {
         .industry-head {
             display: flex;
@@ -1005,10 +1020,6 @@
         grid-area: image;
         display: flex;
         align-items: center;
-
-        img {
-            /* transform: scale(1.05); */
-        }
     }
 }
 
@@ -1278,13 +1289,19 @@
 
 .folivora-features-container {
     text-align: center;
+
+    .titles {
+        &>h1+p {
+            margin: 20px 0 10px;
+        }
+    }
 }
 
 .features-boxes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .features-box {
@@ -1304,10 +1321,6 @@
 /* -------------------------- */
 /* END :: Features Container  */
 /* -------------------------- */
-.operating-section {
-    /* background: linear-gradient(135deg, #c2bcbc, #ff6666); */
-}
-
 .operating-container {
     text-align: center;
 
@@ -1357,10 +1370,6 @@
             align-items: center;
             justify-content: center;
             gap: 20px;
-        }
-
-        i {
-            /* font-size: 32px; */
         }
 
         &>p {
@@ -1474,6 +1483,10 @@
 /* ------------------------------ */
 .deployment-container {
     text-align: center;
+
+    &>h1+p {
+        margin: 20px 0 10px;
+    }
 
     h1 {
         margin-bottom: 8px;

@@ -4,6 +4,9 @@ AOS.init({
 });
 
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 // Handling responsive menu toggle functionality
 const navbarContainer = document.querySelector(
@@ -50,6 +53,11 @@ navbarContainer.addEventListener("click", (event) => {
   }
 });
 
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 // Managing submenu toggling for navigation items with submenus
 const navItemsWithSubmenus = document.querySelectorAll(
   "#header-nav-main > li:has(.submenu)"
@@ -71,6 +79,11 @@ navItemsWithSubmenus.forEach((navItem, currentIndex) => {
     });
   });
 });
+
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 // Animating the header on scroll
 const headerGlobal = document.querySelector(
@@ -95,3 +108,100 @@ window.addEventListener("scroll", () => {
     }
   }
 });
+
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+function changeLang() {
+  // Changing the Lang Selector Btn
+  const en_par = document.querySelector("li.lang-selector > .submenu-triger"),
+    en_btn = en_par.querySelector("a"),
+    en_btn_icon = en_btn.querySelector("i"),
+    de_par = document.querySelector("li.lang-selector > div.submenu > ul > li"),
+    de_btn = de_par.querySelector("a");
+  en_par.appendChild(de_btn);
+  de_par.appendChild(en_btn);
+  de_btn.appendChild(en_btn_icon);
+  // Select all elements with the custom "de-lang" attribute
+  const languageElements = document.querySelectorAll("[de-lang]");
+
+  languageElements.forEach((element) => {
+    // Retrieve the value of the "de-lang" attribute (German language text)
+    const germanText = element.getAttribute("de-lang");
+
+    // Iterate through the child nodes of the element
+    element.childNodes.forEach((node) => {
+      // Check if the node is a text node and has non-empty content
+      if (node.nodeType === Node.TEXT_NODE && node.textContent.trim() !== "") {
+        // Store the current text content (English language text)
+        const englishText = node.textContent;
+
+        // Swap the text content with the German text
+        node.textContent = germanText;
+
+        // Update the "de-lang" attribute with the English text
+        element.setAttribute("de-lang", englishText);
+      }
+    });
+  });
+}
+
+// ^^^^^^^^^^^^^^^^^^^^
+// ^^^^^^^^^^^^^^^^^^^^
+// ^^^^^^^^^^^^^^^^^^^^
+//    IMPROTANT NOTE
+// ^^^^^^^^^^^^^^^^^^^^
+// ^^^^^^^^^^^^^^^^^^^^
+// ^^^^^^^^^^^^^^^^^^^^
+
+// FOR BACKEND PRODUCTION
+
+// const urlPath = window.location.pathname;
+// if (urlPath.includes("/de/"))  changeLang();
+
+// JUST FOR TESTING, WILL BE REMOVED AFTER BACKEND DEVELOPEMENT
+
+const langParam = new URLSearchParams(window.location.search).get("lang");
+
+if (langParam) {
+  if (langParam === "de") {
+    changeLang();
+
+    const de_par = document.querySelector(
+        "li.lang-selector > div.submenu > ul > li"
+      ),
+      de_btn = de_par.querySelector("a");
+
+    de_btn.setAttribute("href", window.location.pathname + "?lang=en");
+
+    document.querySelectorAll("a").forEach((anchor) => {
+      if (anchor.hasAttribute("href")) {
+        const url = new URL(anchor.href);
+        if (!url.searchParams.has("lang")) {
+          url.searchParams.append("lang", "de");
+          anchor.href = url.toString();
+        }
+      }
+    });
+  } else {
+    const de_par = document.querySelector(
+        "li.lang-selector > div.submenu > ul > li"
+      ),
+      de_btn = de_par.querySelector("a");
+
+    de_btn.setAttribute("href", window.location.pathname + "?lang=de");
+
+    const url = new URL(window.location.href);
+    url.searchParams.delete("lang");
+    history.replaceState({}, "", url.toString());
+  }
+} else {
+  const de_par = document.querySelector(
+      "li.lang-selector > div.submenu > ul > li"
+    ),
+    de_btn = de_par.querySelector("a");
+
+  de_btn.setAttribute("href", window.location.pathname + "?lang=de");
+}
