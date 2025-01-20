@@ -10,7 +10,9 @@
     .hero-section {
         & .hero__bg {
             &::before {
-                background: linear-gradient(to top, #ffffff 0 43%, #00000000 61% 100%);
+                /* background: linear-gradient(to top, #ffffff 0 43%, #00000000 61% 100%); */
+                background: linear-gradient(to right, #ffffff 0 100%, #00000000 0% 100%);
+                opacity: .3;
             }
         }
     }
