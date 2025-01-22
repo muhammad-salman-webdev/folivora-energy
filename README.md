@@ -69,6 +69,9 @@ folivora-energy/
 ├── clients.html
 ├── about-us.html
 ├── contact-us.html
+├── corporate.html
+├── imprint.html
+├── privacy.html
 └── README.md
 ```
 
