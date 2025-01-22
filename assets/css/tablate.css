@@ -232,4 +232,15 @@
             }
         }
     }
+
+    .folivora-sticky-anim-section {
+        ._label {
+            font-size: 18px;
+            padding: 8px 20px;
+
+            span {
+                font-size: 22px;
+            }
+        }
+    }
 }

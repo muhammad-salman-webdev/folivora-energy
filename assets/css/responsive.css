@@ -224,4 +224,10 @@
             width: 100% !important;
         }
     }
+
+    .folivora-sticky-anim-section {
+        ._label {
+            margin-bottom: 10px;
+        }
+    }
 }

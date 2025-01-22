@@ -117,6 +117,17 @@
         gap: 20px;
         align-items: start;
     }
+
+    .folivora-sticky-anim-section {
+        ._label {
+            font-size: 16px;
+            padding: 6px 20px;
+
+            span {
+                font-size: 20px;
+            }
+        }
+    }
 }
 
 /* Features Boxes  */
