@@ -1287,6 +1287,25 @@
         z-index: 999999;
         margin: 0 8%;
     }
+
+    ._label {
+        background: #FCFCFC;
+        max-width: max-content;
+        padding: 10px 30px;
+        border-radius: 100px;
+        border-bottom: 1px solid orange;
+        font-family: 'Poppins';
+        font-size: 22.74px;
+        font-weight: 400;
+        color: #505050A6;
+        margin-bottom: -20px;
+
+        span {
+            font-size: 28.42px;
+            font-weight: 700;
+            color: #D49A49;
+        }
+    }
 }
 
 .folivora-features-container {
