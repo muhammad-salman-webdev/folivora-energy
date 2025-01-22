@@ -58,22 +58,48 @@ navbarContainer.addEventListener("click", (event) => {
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-// Managing submenu toggling for navigation items with submenus
+// Selecting all navigation items that have a submenu within the main header navigation
 const navItemsWithSubmenus = document.querySelectorAll(
   "#header-nav-main > li:has(.submenu)"
 );
 
+// Function to check if the screen width is less than 1240 pixels (responsive breakpoint)
+function checkScreenSize() {
+  return window.innerWidth < 1240;
+}
+
+// Initial check to determine if the screen is small
+let isSmallScreen = checkScreenSize();
+
+// Update the screen size check when the window is resized
+window.addEventListener("resize", () => {
+  isSmallScreen = checkScreenSize();
+});
+
+// Loop through each navigation item that contains a submenu
 navItemsWithSubmenus.forEach((navItem, currentIndex) => {
+  // Select the submenu trigger element inside the current navigation item
   const submenuTrigger = navItem.querySelector(".submenu-triger");
 
+  // Find the first anchor link inside the submenu trigger
+  const link = submenuTrigger.querySelector("a[href]");
+
+  // Prevent default link behavior if screen size is small (e.g., mobile view)
+  if (link) {
+    link.addEventListener("click", (_link) => {
+      if (isSmallScreen) _link.preventDefault();
+    });
+  }
+
+  // Add click event to the submenu trigger to handle toggling the submenu
   submenuTrigger.addEventListener("click", () => {
-    // Close all other open submenus and toggle the clicked submenu
+    // Loop through all navigation items with submenus
     navItemsWithSubmenus.forEach((otherNavItem, otherIndex) => {
       if (currentIndex === otherIndex) {
-        // Toggle active state for the clicked menu
+        // Toggle the 'active' class for the clicked menu item
         otherNavItem.classList.toggle("active");
       } else {
-        // Remove active state from other menus
+        // Remove the 'active' class from all other menu items
         otherNavItem.classList.remove("active");
       }
     });
@@ -108,6 +134,30 @@ window.addEventListener("scroll", () => {
     }
   }
 });
+
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+//
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".container .divider-line");
+
+  function checkVisibility() {
+    elements.forEach((el) => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top <= window.innerHeight * 0.9 && rect.bottom >= 0) {
+        el.classList.add("_anim");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", checkVisibility);
+  checkVisibility(); // Initial check in case elements are already in view
+});
+
+//
 
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
