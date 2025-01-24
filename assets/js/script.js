@@ -2,6 +2,83 @@
 AOS.init({
   once: true, // Ensures animations happen only once
 });
+// Hero Video Popup
+// Get the elements for the video popup button, popup container, and iframe
+const heroVideoPopupBtn = document.getElementById("hero-video-popup-btn");
+const heroVideoPopup = document.getElementById("hero-video-popup");
+const youtubeIframe = heroVideoPopup.querySelector("iframe");
+
+// Get the close button inside the popup
+const heroVideoPopupCloseBtn = heroVideoPopup.querySelector(".popup-close-btn");
+
+// Variable to store the scroll position before opening the popup
+let scrollPosition = 0;
+
+// Event listener for opening the video popup
+heroVideoPopupBtn.addEventListener("click", () => {
+  // Add the 'show' class to display the popup
+  heroVideoPopup.classList.add("show");
+
+  // Add animation after a short delay for smooth transition
+  setTimeout(() => {
+    heroVideoPopup.classList.add("anim");
+  }, 10);
+
+  // Get the video URL from the button's data attribute
+  const videoUrl = heroVideoPopupBtn.getAttribute("data-video-url");
+  if (videoUrl) {
+    youtubeIframe.src = videoUrl; // Set iframe src to play the video
+  }
+
+  // Store the current scroll position to restore it later
+  scrollPosition = window.scrollY || window.pageYOffset;
+
+  // Pause body scrolling by fixing the body's position
+  document.body.style.position = "fixed";
+  document.body.style.top = `-${scrollPosition}px`; // Prevent page from moving
+  document.body.style.left = "0";
+  document.body.style.right = "0";
+  document.body.style.overflow = "scroll"; // Allow scrolling within the popup
+});
+
+// Event listener to close the popup when the close button is clicked
+heroVideoPopupCloseBtn.addEventListener("click", function () {
+  closeVideoPopup(); // Call function to close popup
+
+  youtubeIframe.src = ""; // Clear the video URL to stop playback
+});
+
+// Event listener to close the popup when clicking outside the video content
+heroVideoPopup.addEventListener("click", (event) => {
+  if (event.target === heroVideoPopup) {
+    closeVideoPopup(); // Call function to close popup
+
+    youtubeIframe.src = ""; // Clear the video URL to stop playback
+  }
+});
+
+// Function to close the video popup and restore page scrolling
+function closeVideoPopup() {
+  // Remove animation class first for smooth closing transition
+  heroVideoPopup.classList.remove("anim");
+
+  // After a short delay, remove the 'show' class to hide the popup
+  setTimeout(() => {
+    heroVideoPopup.classList.remove("show");
+  }, 500);
+
+  // Restore body scrolling by resetting the styles
+  document.body.style.position = "";
+  document.body.style.top = "";
+  document.body.style.left = "";
+  document.body.style.right = "";
+  document.body.style.overflow = "";
+
+  // Restore the original scroll position smoothly
+  requestAnimationFrame(() => {
+    window.scrollTo({ top: scrollPosition, behavior: "instant" });
+  });
+}
 
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
