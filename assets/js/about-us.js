@@ -12,3 +12,14 @@ publicationsToggleButton.addEventListener("click", () => {
   publicationsToggleButton.classList.toggle("_hide");
   publicationsCardsContainer.classList.toggle("_hide");
 });
+
+// Adding New Cards
+
+const addMoreBtn = document.getElementById("add-more-publications-btn");
+
+addMoreBtn.addEventListener("click", () => {
+  addMoreBtn.classList.add("animating");
+  setTimeout(() => {
+    addMoreBtn.classList.remove("animating");
+  }, 2000);
+});

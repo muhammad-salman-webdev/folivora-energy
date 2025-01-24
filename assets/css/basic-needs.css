@@ -26,6 +26,10 @@ html {
     overflow-x: hidden;
 }
 
+body {
+    transition: all 0s linear;
+}
+
 img {
     width: 100%;
 }
@@ -161,6 +165,10 @@ h6 {
     cursor: pointer;
     max-width: max-content;
 
+    &:active {
+        transform: scale(0.85);
+    }
+
     &::selection {
         color: white;
         background: #1a723a;
@@ -201,6 +209,72 @@ h6 {
             color: white;
             background: black;
         }
+    }
+
+    &.btn-loading {
+        position: relative;
+        transition: all 0.25s ease;
+        overflow: hidden;
+
+        &.animating {
+            border-color: transparent;
+
+            .loading {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        .loading {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.25s ease;
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            width: 100%;
+            height: 100%;
+            background: #14552C;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .loading:after {
+            content: "";
+            width: 30px;
+            height: 30px;
+            opacity: 0.5;
+            position: absolute;
+            border-radius: 50%;
+            animation: btnLoadingAnimation 1.5s ease infinite;
+            border: 5px solid #fff;
+        }
+
+        .loading:before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            position: absolute;
+            border-radius: 50%;
+            animation: btnLoadingAnimation 1s ease infinite;
+        }
+    }
+}
+
+@keyframes btnLoadingAnimation {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
     }
 }
 

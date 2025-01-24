@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="assets/css/mobile.css" />
   </head>
   <body>
+    <style></style>
     <!-- ----------------------- -->
     <!-- START :: Header Section -->
     <!-- ----------------------- -->
@@ -272,8 +273,17 @@
               <!-- Sloth Brain Intro -->
               <div class="slothbrain-intro">
                 <!-- Youtube Video Link -->
-                <a href="#">
-                  <span>Download Our Portfolio for more Information</span>
+                <a
+                  target="_blank"
+                  class="play-icon"
+                  id="hero-video-popup-btn"
+                  data-video-url="https://www.youtube.com/embed/rzArDywPrBY?si=BHbt0Av74sg_Q7L1">
+                  <i class="fa-solid fa-play"></i>
+                  <span
+                    de-lang="Kontaktieren Sie uns
+                ">
+                    Wir stellen vor: SlothBrAIn
+                  </span>
                 </a>
               </div>
             </div>
@@ -282,13 +292,30 @@
       </div>
     </section>
 
-    <!-- ------------------------>
-    <!-- END :: Hero Section 2 -->
-    <!-- ------------------------>
+    <!-- ------------------- -->
+    <!-- END :: Hero Section -->
+    <!-- ------------------- -->
 
     <!-- ################################# -->
     <!-- ################################# -->
     <!-- ################################# -->
+
+    <!-- VIDEO POPUP -->
+
+    <section class="video_popup-section" id="hero-video-popup">
+      <div class="popup-close-btn">
+        <i class="fa-regular fa-xmark"></i>
+      </div>
+      <div class="video_popup-container">
+        <iframe
+          id="heroPopupVideoIframe"
+          src=""
+          frameborder="0"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- VIDEO POPUP -->
 
     <!-- ################################# -->
     <!-- ################################# -->
@@ -435,64 +462,74 @@
 
           <div class="publication-cards-container" id="publicationsCards">
             <div class="article-cards">
-              <!-- Article Card # 1  -->
-              <div class="article-card">
-                <a href="#">
-                  <h2>
-                    Optimal component sizing and operational optimization of a
-                    mobile energy system for decentralized electricity supply
-                  </h2>
-                </a>
-                <p>
-                  <strong>
-                    Roth, Maximilian; Franke, George; Rinderknecht, Stephan
-                  </strong>
-                </p>
+              <div class="sub-articles-cards-container">
+                <!-- Article Card # 1  -->
+                <div class="article-card">
+                  <a href="#">
+                    <h2>
+                      Optimal component sizing and operational optimization of a
+                      mobile energy system for decentralized electricity supply
+                    </h2>
+                  </a>
+                  <p>
+                    <strong>
+                      Roth, Maximilian; Franke, George; Rinderknecht, Stephan
+                    </strong>
+                  </p>
 
-                <div class="article-btn">
-                  <span>In: Smart Energy, 11, Elsevier, ISSN 2666-9552</span>
-                  <a class="btn btn-light">DOI | Official URL</a>
+                  <div class="article-btn">
+                    <span>In: Smart Energy, 11, Elsevier, ISSN 2666-9552</span>
+                    <a class="btn btn-light">DOI | Official URL</a>
+                  </div>
+                </div>
+
+                <!-- Article Card # 2  -->
+                <div class="article-card">
+                  <a href="#">
+                    <h2>
+                      Decentralized multi-grid coupling for energy supply of a
+                      hybrid bus depot using mixed-integer linear programming
+                    </h2>
+                  </a>
+                  <p>
+                    <strong>
+                      Roth, Maximilian; Franke, George; Rinderknecht, Stephan
+                    </strong>
+                  </p>
+
+                  <div class="article-btn">
+                    <span>In: Smart Energy, 11, Elsevier, ISSN 2666-9552</span>
+                    <a class="btn btn-light">DOI | Official URL</a>
+                  </div>
+                </div>
+
+                <!-- Article Card # 3  -->
+                <div class="article-card">
+                  <a href="#">
+                    <h2>
+                      Optimal component sizing and operational optimization of a
+                      mobile energy system for decentralized electricity supply
+                    </h2>
+                  </a>
+                  <p>
+                    <strong>
+                      Roth, Maximilian; Franke, George; Rinderknecht, Stephan
+                    </strong>
+                  </p>
+
+                  <div class="article-btn">
+                    <span>In: Smart Energy, 11, Elsevier, ISSN 2666-9552</span>
+                    <a class="btn btn-light">DOI | Official URL</a>
+                  </div>
                 </div>
               </div>
 
-              <!-- Article Card # 2  -->
-              <div class="article-card">
-                <a href="#">
-                  <h2>
-                    Decentralized multi-grid coupling for energy supply of a
-                    hybrid bus depot using mixed-integer linear programming
-                  </h2>
+              <!-- Load More Button -->
+              <div class="load-more-button">
+                <a class="btn btn-loading" id="add-more-publications-btn">
+                  Load More
+                  <span class="loading"></span>
                 </a>
-                <p>
-                  <strong>
-                    Roth, Maximilian; Franke, George; Rinderknecht, Stephan
-                  </strong>
-                </p>
-
-                <div class="article-btn">
-                  <span>In: Smart Energy, 11, Elsevier, ISSN 2666-9552</span>
-                  <a class="btn btn-light">DOI | Official URL</a>
-                </div>
-              </div>
-
-              <!-- Article Card # 1  -->
-              <div class="article-card">
-                <a href="#">
-                  <h2>
-                    Optimal component sizing and operational optimization of a
-                    mobile energy system for decentralized electricity supply
-                  </h2>
-                </a>
-                <p>
-                  <strong>
-                    Roth, Maximilian; Franke, George; Rinderknecht, Stephan
-                  </strong>
-                </p>
-
-                <div class="article-btn">
-                  <span>In: Smart Energy, 11, Elsevier, ISSN 2666-9552</span>
-                  <a class="btn btn-light">DOI | Official URL</a>
-                </div>
               </div>
             </div>
           </div>
