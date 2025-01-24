@@ -1,0 +1,112 @@
+    <!-- 
+        Will be pasted to index.html line 931
+    -->
+
+
+    <!-- START :: DIVIDER -->
+    <div class="container">
+        <div class="divider-line"></div>
+      </div>
+      <!-- END :: DIVIDER -->
+  
+      <!-- ################################# -->
+      <!-- ################################# -->
+      <!-- ################################# -->
+  
+      <!-- --------------------------->
+      <!-- START :: Partner Slider 8-->
+      <!-- --------------------------->
+  
+      <section class="partner-slider-section">
+        <div class="partner-slider-container">
+          <!-- Titles -->
+          <div class="titles">
+            <h1>Our Partners</h1>
+            <p class="text-small">
+              Just a few of our close partners and clients who trust us
+            </p>
+          </div>
+  
+          <!-- Slider -->
+          <div class="partner-slider">
+            <!-- Slider main container -->
+            <div class="partner-swiper" data-partner-swiper>
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Logo Slide -->
+                <div class="swiper-slide">
+                  <div class="partner-logo">
+                    <img
+                      src="assets/media/images/partners-logo/partner-logo-01.svg"
+                      alt="#" />
+                  </div>
+                </div>
+                <!-- Logo Slide -->
+                <div class="swiper-slide">
+                  <div class="partner-logo">
+                    <img
+                      src="assets/media/images/partners-logo/partner-logo-02.svg"
+                      alt="#" />
+                  </div>
+                </div>
+                <!-- Logo Slide -->
+                <div class="swiper-slide">
+                  <div class="partner-logo">
+                    <img
+                      src="assets/media/images/partners-logo/partner-logo-03.svg"
+                      alt="#" />
+                  </div>
+                </div>
+                <!-- Logo Slide -->
+                <div class="swiper-slide">
+                  <div class="partner-logo">
+                    <img
+                      src="assets/media/images/partners-logo/partner-logo-04.svg"
+                      alt="#" />
+                  </div>
+                </div>
+                <!-- Logo Slide -->
+                <div class="swiper-slide">
+                  <div class="partner-logo">
+                    <img
+                      src="assets/media/images/partners-logo/partner-logo-01.svg"
+                      alt="#" />
+                  </div>
+                </div>
+                <!-- Logo Slide -->
+                <div class="swiper-slide">
+                  <div class="partner-logo">
+                    <img
+                      src="assets/media/images/partners-logo/partner-logo-02.svg"
+                      alt="#" />
+                  </div>
+                </div>
+                <!-- Logo Slide -->
+                <div class="swiper-slide">
+                  <div class="partner-logo">
+                    <img
+                      src="assets/media/images/partners-logo/partner-logo-03.svg"
+                      alt="#" />
+                  </div>
+                </div>
+                <!-- Logo Slide -->
+                <div class="swiper-slide">
+                  <div class="partner-logo">
+                    <img
+                      src="assets/media/images/partners-logo/partner-logo-04.svg"
+                      alt="#" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- --------------------- -->
+      <!-- END :: Partner Slider -->
+      <!-- --------------------- -->
+  
+      <!-- ################################# -->
+      <!-- ################################# -->
+      <!-- ################################# -->
