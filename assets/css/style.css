@@ -1641,6 +1641,16 @@
     background-size: cover;
     display: none;
 
+    ._label {
+        width: 80px;
+        display: block;
+        margin: 0px 0 -20px auto;
+    }
+
+    h3 {
+        margin-bottom: 10px;
+    }
+
     .caseStudy-resp-cards {
         display: flex;
         overflow: auto;
