@@ -1205,6 +1205,14 @@
     text-align: center;
     border-radius: 8px;
 
+    ._label {
+        width: 140px;
+        margin-right: auto;
+        position: absolute;
+        display: block;
+        margin-top: -10px;
+    }
+
     p {
         padding: 24px 0 60px 0;
     }
