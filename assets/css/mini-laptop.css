@@ -84,8 +84,26 @@
             'content' !important;
 
         .industry-image {
+            padding: 9%;
             max-width: 600px;
             margin: 0 auto;
+            overflow: hidden;
+            transform: scale(1.05);
+
+            &>svg {
+                width: 80%;
+                height: 80%;
+
+                &.back-shape-svg {
+                    top: 5%;
+                    left: 1%;
+                }
+
+                &.front-shape-svg {
+                    bottom: 2%;
+                    right: 5%
+                }
+            }
         }
     }
 
