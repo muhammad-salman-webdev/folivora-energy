@@ -15,11 +15,44 @@ publicationsToggleButton.addEventListener("click", () => {
 
 // Adding New Cards
 
+// const addMoreBtn = document.getElementById("add-more-publications-btn");
+
+// const pubCards = publicationsCardsContainer.querySelectorAll(".article-card");
+// console.log(pubCards);
+
+// addMoreBtn.addEventListener("click", () => {
+//   addMoreBtn.classList.add("animating");
+//   setTimeout(() => {
+//     addMoreBtn.classList.remove("animating");
+//   }, 2000);
+// });
+
 const addMoreBtn = document.getElementById("add-more-publications-btn");
+const pubCards = publicationsCardsContainer.querySelectorAll(".article-card");
+
+let visibleCount = 2; // Initially show 2 cards
+
+// Initially hide all cards except the first two
+pubCards.forEach((card, index) => {
+  if (index >= visibleCount) {
+    card.style.display = "none";
+  }
+});
 
 addMoreBtn.addEventListener("click", () => {
   addMoreBtn.classList.add("animating");
+
   setTimeout(() => {
     addMoreBtn.classList.remove("animating");
-  }, 2000);
+
+    if (visibleCount < pubCards.length) {
+      pubCards[visibleCount].style.display = "block"; // Show next card
+      visibleCount++; // Increment visible count
+    }
+
+    // Hide button if all cards are visible
+    if (visibleCount >= pubCards.length) {
+      addMoreBtn.style.display = "none";
+    }
+  }, 1000); // 1 sec animation
 });
