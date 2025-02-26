@@ -13,19 +13,7 @@ publicationsToggleButton.addEventListener("click", () => {
   publicationsCardsContainer.classList.toggle("_hide");
 });
 
-// Adding New Cards
-
-// const addMoreBtn = document.getElementById("add-more-publications-btn");
-
-// const pubCards = publicationsCardsContainer.querySelectorAll(".article-card");
-// console.log(pubCards);
-
-// addMoreBtn.addEventListener("click", () => {
-//   addMoreBtn.classList.add("animating");
-//   setTimeout(() => {
-//     addMoreBtn.classList.remove("animating");
-//   }, 2000);
-// });
+// Adding New Card 1-by-1
 
 const addMoreBtn = document.getElementById("add-more-publications-btn");
 const pubCards = publicationsCardsContainer.querySelectorAll(".article-card");
