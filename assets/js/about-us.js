@@ -14,7 +14,6 @@ publicationsToggleButton.addEventListener("click", () => {
 });
 
 // Adding New Card 1-by-1
-
 const addMoreBtn = document.getElementById("add-more-publications-btn");
 const pubCards = publicationsCardsContainer.querySelectorAll(".article-card");
 
